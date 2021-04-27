@@ -1,0 +1,581 @@
+/* ADOBE FONTS:
+Bely Display Regular
+font-family: bely-display, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Bely Italic
+font-family: bely, serif;
+font-weight: 400;
+font-style: italic;
+
+
+Bely Regular
+font-family: bely, serif;
+font-weight: 400;
+font-style: normal;
+
+
+Bely Bold
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+
+
+Bely Bold Italic
+font-family: bely, serif;
+font-weight: 700;
+font-style: italic; */
+
+body {
+background-color: black;
+color: white;
+overflow: hidden;
+padding: 0px;
+margin: 0px;
+height:100%;
+min-height: 100vh;
+overflow-x :hidden;
+padding-top: 40px;
+
+}
+
+body,html {
+  margin:0;
+  padding:0;
+
+  overflow: auto;
+}
+
+html {
+scroll-behavior: [ auto | smooth ];
+position: relative;
+height: 100%;
+}
+
+a.skip-main {
+left: 0px;
+position:absolute;
+top:auto;
+z-index:-10000;
+width:0px;
+height:0px;
+overflow:hidden;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+  
+}
+a.skip-main:focus, a.skip-main:active {
+color: black;
+background-color: #FDCE00;
+left: 0;
+top: 0;
+width: 10%;
+height: auto;
+overflow: auto;
+margin: 10px 5%;
+padding: 10px;
+border-radius: 10px;
+border:4px solid white;
+text-align:center;
+font-size: 1.25vw;
+z-index:100000;
+text-decoration: none;
+}
+
+make-yellow {
+    color: #FDCE00;
+}
+
+header{
+  background: #FDCE00;
+  height: 40px;
+  position: fixed;
+  top: 0;
+  transition: top 0.2s ease-in-out;
+  width: 100%;
+}
+
+.b-logo{
+position: relative;
+padding:0;
+margin:0;
+margin-left: 14%;
+top: 60px;
+font-family: Bely Display;
+font-style: normal;
+font-weight: normal;
+font-size: 80px;
+line-height: 48px;
+color: #FDCE00;
+--animate-duration: 2s;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+/* TOP LANDING SECTION */
+
+.landing {
+padding-bottom: 0;
+margin-top: 0;
+width:100%;
+height:70%;
+background-color: black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+overflow: hidden;
+  }
+
+.top-left {
+margin-top:20%;
+width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding:0px;
+  }
+
+.top-left-content {
+margin-left: 14%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+align-self: center;
+    
+}
+
+.top-primary {
+font-family: 'bely-display', sans-serif;
+src: "https://use.typekit.net/evu2vai.css";
+font-weight: 400;
+font-style: normal;
+color: white;
+font-size: 50px;
+margin-top: 0px;
+margin-bottom: 35px;
+--animate-duration: 2s;
+}
+
+.top-secondary {
+font-family: 'bely', serif;
+src: "https://use.typekit.net/evu2vai.css";
+font-weight: 400;
+font-style: normal;
+color: white;
+font-size: 30px;
+margin-top: 0px;
+margin-bottom: 35px;
+width: 80%;
+--animate-duration: 2s;
+}
+
+/* BUTTON */
+
+.button { 
+padding: 30px 30px;
+background: #FDCE00;
+font-size: 40px;
+line-height: 26px;
+text-align: center;
+color: #000000;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+border: none;
+text-decoration: none;
+}
+
+.button:hover{
+    background: #ffefa7;
+}
+
+.begin {
+display: none;
+}
+
+.top-right{
+width: 100%;
+height: 100%;
+--animate-duration: 2s;
+overflow: hidden;
+position: relative; 
+padding-top: 2%;
+}
+
+.img-bella-at-brown {
+width: 100%;
+/* height: 100%; */
+/* object-fit: cover; */
+display: table;
+/* left: 50%; */
+/* margin-left: -50%; */
+position: absolute; 
+bottom: 0;
+}
+
+/* SECTIONS */
+.all-content-wrapper {
+  /* Scroll snaps in content of the site */
+  /* scroll-snap-type: y mandatory; */
+overflow: hidden;
+padding: 0px;
+margin: 0px;
+display: flex;
+flex-direction: column;
+}
+
+.hidden{
+  display: none;
+}
+
+/** BELOW CODE FROM HERE: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
+  * Copyright 2012, Digital Fusion
+  * Licensed under the MIT license.
+  * http://teamdf.com/jquery-plugins/license/
+  *
+  * @author Sam Sehnert
+  * @desc A small plugin that checks whether elements are within
+  *     the user visible viewport of a web browser.
+  *     only accounts for vertical position, not horizontal.
+  */
+   
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+/* End of copyright code */
+
+.section {
+  /* scroll-snap-align: start;   */
+padding-bottom: 0;
+margin-top: 0;
+width: 100vw;
+padding-top: 5%;
+padding-bottom: 10%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+  }
+
+.section-content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header-text {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.title{
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+font-weight: bold;
+font-size: 50px;
+width: 60%;
+line-height: 48px;
+text-align: center;
+color: #FFFFFF;
+padding-bottom: 3%;
+}
+
+.description{
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+font-weight: bold;
+text-align: center;
+color: #FFFFFF;
+width: 85%;
+padding-bottom: 5%;
+}
+
+  /* DAY IN THE LIFE SECTION */
+.day-in-life {
+align-items: center;
+}
+
+.nograph{
+  display:none;
+}
+
+.show {
+  display:block;
+}
+
+/* .chart{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: flex-start;
+
+padding-left: 0px;
+padding-right: 0px;
+margin: 0px;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+font-weight: bold;
+} */
+
+.graph-svg{
+display:none;
+}
+
+.mobile-graph {
+  display: flex;
+  width: 95%;
+}
+
+path {
+    font-family: bely, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* REX SECTION */
+  .rex {
+  }
+
+.photo {
+    width: 100%;
+    align-self: center;
+}
+
+
+/* DIET SECTION */
+  .diet {
+  }
+
+  .food-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .food{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px 50px;
+  padding-top: 34px;
+  padding-bottom: 10px;
+  }
+
+  .food-pic{
+height: 400px;
+align-self: center;
+justify-content: center;
+  }
+
+.food-txt {
+font-size: 40px;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+  }
+
+
+  /* TRUTHS GAME SECTION */
+
+.truthsgame{
+}
+
+.game{
+width: 100%;
+font-size: 40px;
+}
+
+.game-option{
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: black;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+align-self: center;
+width: 100%;
+/* padding-top: 10px;
+padding-bottom: 10px; */
+text-align: center;
+padding-top: 8%;
+padding-bottom: 8%;
+}
+
+.second-group {
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: black;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+align-self: center;
+padding-top: 8%;
+padding-bottom: 8%;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 100%;
+/* padding-top: 10px;
+padding-bottom: 10px; */
+}
+
+#second-game{
+  width: 80%;
+  font-size: 34px;
+}
+
+#left-x-icon{
+  margin-right: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: 100;
+  display: none;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+
+#right-x-icon{
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: 100;
+  display: none;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+
+.firstBefore {
+  background: #FFE36A;
+}
+
+.thirdBefore {
+  background: #D0AA00;
+}
+
+.lieBefore {
+  background: #FDCE00;
+}
+
+.game-reveal {
+  background-color: #FDCE00;
+}
+
+.lie{
+  background-color: #C4C4C4;
+  font-size: 28px;
+}
+
+.hide {
+  display: none;
+}
+
+.reveal{
+margin-top: 41px;
+}
+
+.skeleton {
+}
+  
+/* BOTTOM SECTION */
+.bottom {
+background-color: #FDCE00;
+height: 50vh;
+font-size: 40px;
+  }
+
+.black{
+  color: black;
+  }
+
+#learn-more-txt {
+color: black;
+padding-bottom: 100px;
+font-size: 35px;
+
+}
+
+#this-is-me-txt{
+padding-top: 30x;
+padding-bottom: 30px;
+font-size: 35px;
+width: 80%;
+}
+
+.black-button{
+    background-color: black;
+    color: white;
+}
+
+.black-button:hover{
+color: black;
+}
+
+/* FOOTER */
+
+#footer {
+background-color: black;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #212121;
+height: auto;
+padding-top: 5%;
+padding-bottom: 5%;
+}
+
+#footer-txt{
+font-family: bely-display, sans-serif;
+font-weight: 400;
+font-style: normal;  
+font-size: 40px;
+}
+
+.small {
+font-size: 20px;
+}
+
+/* Draws graph */
+.lines-animation {
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  animation: draw 2.5s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,620 @@
+/* ADOBE FONTS:
+Bely Display Regular
+font-family: bely-display, sans-serif;
+font-weight: 400;
+font-style: normal;
+
+Bely Italic
+font-family: bely, serif;
+font-weight: 400;
+font-style: italic;
+
+
+Bely Regular
+font-family: bely, serif;
+font-weight: 400;
+font-style: normal;
+
+
+Bely Bold
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+
+
+Bely Bold Italic
+font-family: bely, serif;
+font-weight: 700;
+font-style: italic; */
+
+body {
+background-color: black;
+color: white;
+overflow: hidden;
+padding: 0px;
+margin: 0px;
+height:100%;
+min-height: 100vh;
+overflow-x :hidden;
+
+}
+
+body,html {
+  margin:0;
+  padding:0;
+  overflow: auto;
+}
+
+html {
+scroll-behavior: [ auto | smooth ];
+position: relative;
+height: 100%;
+}
+
+a.skip-main {
+left: 0px;
+position:absolute;
+top:auto;
+z-index:-10000;
+width:0px;
+height:0px;
+overflow:hidden;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+  
+}
+a.skip-main:focus, a.skip-main:active {
+color: black;
+background-color: #FDCE00;
+left: 0;
+top: 0;
+width: 10%;
+height: auto;
+overflow: auto;
+margin: 10px 5%;
+padding: 10px;
+border-radius: 10px;
+border:4px solid white;
+text-align:center;
+font-size: 1.25vw;
+z-index:100000;
+text-decoration: none;
+}
+
+make-yellow {
+    color: #FDCE00;
+}
+
+/* FROM BOOTSTRAP: */
+.scrolled-down{
+  transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+  transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+
+
+.b-logo{
+position: relative;
+width: 41px;
+height: 48px;
+left: 42px;
+top: 26px;
+font-family: Bely Display;
+font-style: normal;
+font-weight: normal;
+font-size: 40px;
+line-height: 48px;
+color: #FDCE00;
+--animate-duration: 2s;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+/* TOP LANDING SECTION */
+
+.landing {
+    padding-bottom: 0;
+    margin-top: 0;
+    width:100%;
+    height:100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+  }
+
+.top-left {
+      width: 48%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  }
+
+.top-left-content {
+    margin-left: 14%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: center;
+    
+}
+
+.top-primary {
+font-family: 'bely-display', sans-serif;
+src: "https://use.typekit.net/evu2vai.css";
+font-weight: 400;
+font-style: normal;
+color: white;
+font-size: 40px;
+margin-top: 0px;
+margin-bottom: 35px;
+--animate-duration: 2s;
+}
+
+.top-secondary {
+font-family: 'bely', serif;
+src: "https://use.typekit.net/evu2vai.css";
+font-weight: 400;
+font-style: normal;
+color: white;
+font-size: 20px;
+margin-top: 0px;
+margin-bottom: 35px;
+width: 80%;
+--animate-duration: 2s;
+}
+
+/* BUTTON */
+/* Modified button from: https://dev.to/webdeasy/top-20-css-buttons-animations-f41
+*/
+
+.btn-three {
+  color: #FFF;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.btn-three::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255,255,255,0.1);
+  transition: all 0.3s;
+}
+.btn-three:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255,255,255,0.5);
+  transform: scale(1.2,1.2);
+}
+.btn-three:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+}
+
+/* end of css tricks */
+
+.button { 
+padding: 10px 12px;
+background: #FDCE00;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+align-items:center;
+color: #000000;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+border: none;
+text-decoration: none;
+cursor: pointer;
+}
+
+.button:hover{
+background: none;
+color: white;
+}
+
+.begin {
+padding: 12px 22px;
+--animate-duration: 2s;
+}
+
+.top-right{
+width: 52%;
+--animate-duration: 2s;
+  }
+
+.img-bella-at-brown {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SECTIONS */
+.all-content-wrapper {
+  /* Scroll snaps in content of the site */
+  /* scroll-snap-type: y mandatory; */
+overflow: hidden;
+padding: 0px;
+margin: 0px;
+}
+
+.hidden{
+  display: none;
+}
+
+/** BELOW CODE FROM HERE: https://css-tricks.com/slide-in-as-you-scroll-down-boxes/
+  * Copyright 2012, Digital Fusion
+  * Licensed under the MIT license.
+  * http://teamdf.com/jquery-plugins/license/
+  *
+  * @author Sam Sehnert
+  * @desc A small plugin that checks whether elements are within
+  *     the user visible viewport of a web browser.
+  *     only accounts for vertical position, not horizontal.
+  */
+   
+.come-in {
+  transform: translateY(150px);
+  animation: come-in 0.8s ease forwards;
+}
+.come-in:nth-child(odd) {
+  animation-duration: 0.6s;
+}
+.already-visible {
+  transform: translateY(0);
+  animation: none;
+}
+
+@keyframes come-in {
+  to { transform: translateY(0); }
+}
+/* End of copyright code */
+
+.section {
+  /* scroll-snap-align: start;   */
+padding-bottom: 0;
+  margin-top: 0;
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  }
+
+.section-content {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-header-text {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding-bottom: 34px;
+}
+
+.title{
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 48px;
+text-align: center;
+color: #FFFFFF;
+padding-bottom: 16px;
+}
+
+.description{
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+font-weight: bold;
+font-size: 22px;
+line-height: 26px;
+text-align: center;
+color: #FFFFFF;
+width: 54%;
+}
+
+  /* DAY IN THE LIFE SECTION */
+.day-in-life {
+align-items: center;
+}
+
+.nograph{
+  display:none;
+}
+
+.show {
+  display:block;
+}
+
+.graph-svg{
+width: 90%;
+height: 348px;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+padding: 0px;
+padding-top: 32px;
+margin: 0px;
+}
+.mobile-graph {
+  display:none;
+}
+path {
+    font-family: bely, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/* REX SECTION */
+  .rex {
+  }
+
+.photo {
+    width: 50%;
+    align-self: center;
+}
+
+
+/* DIET SECTION */
+  .diet {
+  }
+  .food-wrapper{
+      display: flex;
+      flex-direction: row;
+      padding: 0px;
+      margin: 0px;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .food{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0px;
+      padding: 0px 50px;
+      padding-top: 34px;
+  }
+
+  .food-pic{
+      height: 164px;
+      align-self: center;
+      justify-content: center;
+  }
+
+  .food-txt {
+      font-family: Roboto;
+  }
+
+
+  /* TRUTHS SECTION */
+.game-option{
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: black;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+align-self: center;
+padding-top: 32px;
+padding-bottom: 32px;
+width: 500px;
+text-align: center;
+}
+
+.second-group {
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+color: black;
+font-family: bely, serif;
+font-weight: 700;
+font-style: normal;
+align-self: center;
+width: 500px;
+padding-top: 32px;
+padding-bottom: 32px;
+text-align: center;
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+#second-game{
+  width: 50%;
+}
+
+#left-x-icon{
+  margin-right: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: 100;
+  display: none;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+
+#right-x-icon{
+  margin-left: 50px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  z-index: 100;
+  display: none;
+  width: 20px;
+  height: 20px;
+  align-self: center;
+}
+
+.firstBefore {
+  background: #FFE36A;
+}
+
+.thirdBefore {
+  background: #D0AA00;
+}
+
+.lieBefore {
+  background: #FDCE00;
+}
+
+.game-reveal {
+  background-color: #FDCE00;
+}
+
+.lie{
+  background-color: #C4C4C4;
+}
+
+.hide {
+  display: none;
+}
+
+.reveal{
+margin-top: 41px;
+}
+  
+/* BOTTOM SECTION */
+.bottom {
+    background-color: #FDCE00;
+  }
+
+.black{
+      color: black;
+      width: 100%;
+  }
+
+#learn-more-txt {
+color: black;
+padding-top: 52px;
+padding-bottom: 34px;
+  }
+
+.black-button{
+background-color: black;
+color: white;
+}
+
+.black-button:hover{
+color: black;
+}
+
+/* BUTTON */
+/* Modified button from: https://dev.to/webdeasy/top-20-css-buttons-animations-f41
+*/
+
+.btn-three-black {
+  transition: all 0.5s;
+  position: relative;
+}
+
+.btn-three-black::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+.btn-three-black:hover::before {
+  opacity: 0 ;
+  transform: scale(0.5,0.5);
+}
+.btn-three-black::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid black;
+  transform: scale(1.2,1.2);
+}
+.btn-three-black:hover::after {
+  opacity: 1;
+  transform: scale(1,1);
+} /* end of css tricks */
+
+/* FOOTER */
+
+#footer {
+background-color: black;
+height: 97px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+#footer-txt{
+font-family: bely-display, sans-serif;
+font-weight: 400;
+font-style: normal;  
+font-size: 20px;
+}
+
+
+/* Draws graph */
+.lines-animation {
+  stroke-dasharray: 1700;
+  stroke-dashoffset: 1700;
+  animation: draw 2.5s linear forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+italic{
+  font-style: italic;
+}
+
+
+/* Responsive Web */
+
+/* for tablets */
+@media screen and (min-width: 600px) {
+
+}
+
+/* for desktop */
+@media screen and (min-width: 768px) {
+
+}
+
