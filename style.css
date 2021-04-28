@@ -102,11 +102,10 @@ width: 41px;
 height: 48px;
 left: 42px;
 top: 26px;
-font-family: Bely Display;
+font-family: bely-display, sans-serif;
+font-weight: 400;
 font-style: normal;
-font-weight: normal;
 font-size: 40px;
-line-height: 48px;
 color: #FDCE00;
 --animate-duration: 2s;
 }
