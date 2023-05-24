@@ -2,10 +2,12 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
+    background-color: black;
+    color:white;
 }
 
 .navbar{
-    background-color: gray;
+    background-color: darkslategray;
     display: flex;
     flex-direction: row;
     padding: 5px;
@@ -48,8 +50,8 @@ top-container{
     flex-direction: row;
     justify-content: center;
     height: 50vh;
-    background-color: #f1f1f1;
     overflow: hidden;
+    padding: 10vh 0vh;
 }
 
 #landing-description-text {
@@ -68,6 +70,59 @@ height: 100%;
     margin:10px;
 }
 
-#landing-image-container {
-overflow:hidden;
+#landing-image-container img{
+    overflow: hidden;
+    height: 100%;
 }
+
+#landing-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    overflow: hidden;
+}
+
+
+#bottom-question-text{
+    text-align: center;
+    align-self:center;
+}
+
+.bottom-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 35vh;
+    background-color: #f1f1f1;
+    overflow: hidden;
+}
+
+.bottom-text {
+    display:flex;
+    width: 0px;
+    white-space: nowrap;
+}
+
+.bottom-text p {
+    margin: 10px;
+    z-index: 100;
+    position: relative;
+    white-space: nowrap;
+}
+
+/* Show bottom-text on top of bottom-img  */
+.bottom-img {
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.bottom-column {
+    display: flex;
+    overflow: hidden;
+}
+
