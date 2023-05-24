@@ -51,7 +51,7 @@ top-container{
     justify-content: center;
     height: 50vh;
     overflow: hidden;
-    padding: 10vh 0vh;
+    padding: 10vh;
 }
 
 #landing-description-text {
