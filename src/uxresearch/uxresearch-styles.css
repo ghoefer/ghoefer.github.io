@@ -1,0 +1,100 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.title-subpage{
+    font-weight: 600;
+    font-size: 30px;
+    padding: 30px;
+    color: #E8E8EA;
+}
+
+
+all-projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project-container{
+    height: 40vh;
+    overflow: hidden;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    background: #1E2028;
+    border-radius: 20px;
+
+}
+
+.project-left {
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.project-left img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-right{
+    width: 50%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: #E8E8EA;
+    padding-left: 30px;
+}
+
+.container-of-keywords{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    bottom: 0px;
+    /* text-transform: uppercase; */
+    color: #858484;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+keyword {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+keyword line{
+    padding: 8px;
+    align-self: center;
+}
+
+keyword p, keyword line {
+    margin: 0px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+
+.company-name{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    height: 25px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.project-description {
+    width: 90%;
+    height: 100%;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}

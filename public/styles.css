@@ -2,7 +2,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
-    background-color: black;
+    background-color: #0A0B10;
     color:white;
 }
 
@@ -13,7 +13,7 @@ body{
     text-decoration: none;
     margin: 0px;
     /* height: 15vh; */
-    background: gray;
+    background: #2D2F3A;
     
 }
 
@@ -34,16 +34,23 @@ menu{
     align-items: center;
 }
 
+menu a{
+    color: #687686;
+}
+
+menu a:hover{
+    color: #E8E8EA;
+}
+
+/* #name-button:hover {
+    color: #687686;
+} */
+
 #name-button, menu a{
     text-decoration: none;
-    color: black;
     padding: 5px;
     padding-right: 20px;
     white-space: nowrap;
-}
-
-#name-button:hover, menu a:hover{
-    color: white;
 }
 
 #name-button{
@@ -51,6 +58,7 @@ menu{
     align-self: center;
     font-size: 20px;
     font-weight: bold;
+    color: #E8E8EA;
 }
 
 
