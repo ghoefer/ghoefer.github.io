@@ -25,8 +25,20 @@ all-projects{
     flex-direction: row;
     background: #1E2028;
     border-radius: 20px;
+    transition: transform 0.3s ease;
 
 }
+
+.project-container:hover{
+    height: 45vh;
+    width: 93vw;
+    transform: translateY(-10px);
+}
+
+.project-container:hover .company-name{
+    margin-top: 30px;
+}
+
 
 .project-left {
     width: 50%;
@@ -89,6 +101,7 @@ keyword p, keyword line {
     height: 25px;
     object-fit: contain;
     align-self: flex-start;
+    transition: transform 0.3s ease;
 }
 
 .project-description {
