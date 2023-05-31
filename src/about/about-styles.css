@@ -1,11 +1,49 @@
-#landing-description-text {
-    width: 70vw;
-    padding-left: 4vw;
+about-top-container{
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
+    height: 50vh;
+    overflow: hidden;
+    padding: 10vh;
 }
+
+#about-description-text {
+font-weight: 400;
+font-size: 20px;
+line-height: 25px;
+align-items: center;
+text-align: left;
+display:flex;
+justify-content: center;
+height: 100%;
+width: 70vw;
+padding-left: 4vw;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+
+#about-description-text p {
+    margin:10px;
+}
+
+#about-image-container img{
+    overflow: hidden;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#about-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    overflow: hidden;
+}
+
+
 
 .social-media-bar, #location {
     margin: 10px;

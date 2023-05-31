@@ -6,6 +6,9 @@ body{
     color:white;
 }
 
+
+/* navbar  */
+
 .topnav-container{
     display: flex;
     flex-direction: row;
@@ -42,10 +45,6 @@ menu a:hover{
     color: #E8E8EA;
 }
 
-/* #name-button:hover {
-    color: #687686;
-} */
-
 #name-button, menu a{
     text-decoration: none;
     padding: 5px;
@@ -61,6 +60,8 @@ menu a:hover{
     color: #E8E8EA;
 }
 
+
+/* landing page */
 
 top-container{
     display: flex;
@@ -104,7 +105,7 @@ height: 100%;
 }
 
 
-#bottom-question-text{
+/* #bottom-question-text{
     text-align: center;
     align-self:center;
 }
@@ -135,7 +136,7 @@ height: 100%;
 }
 
 /* Show bottom-text on top of bottom-img  */
-.bottom-img {
+/* .bottom-img {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -149,7 +150,7 @@ height: 100%;
     min-width: 200px;
     width:100%;
     background: blue;
-}
+}  */
 
 .footer {
     display: flex;
