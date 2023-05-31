@@ -90,6 +90,7 @@ height: 100%;
 #landing-image-container img{
     overflow: hidden;
     height: 100%;
+    object-fit: cover;
 }
 
 #landing-image-container{

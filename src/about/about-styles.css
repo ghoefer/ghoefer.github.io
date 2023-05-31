@@ -1,0 +1,22 @@
+#landing-description-text {
+    width: 70vw;
+    padding-left: 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.social-media-bar, #location {
+    margin: 10px;
+    align-self: flex-start;
+}
+
+#location{
+    font-size: 14px;
+    font-weight: 600;
+    color: #E8E8EA;
+}
+.social-media-bar{
+    margin-top: 30px;
+}
