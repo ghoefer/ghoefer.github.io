@@ -23,16 +23,18 @@ all-projects{
     width: 90vw;
     display: flex;
     flex-direction: row;
+    margin: 20px;
     background: #1E2028;
     border-radius: 20px;
     transition: width 0.5s ease;
     transition: height 0.5s ease;
     transition: transform 0.5s ease;
-
+    position: relative;
 
 }
 
 .project-container:hover{
+    position: relative;
     transform: translateY(-10px);
     height: 45vh;
     width: 93vw;
@@ -42,6 +44,9 @@ all-projects{
     margin-top: 30px;
 }
 
+.project-left, .project-right{
+    position: relative;
+}
 
 .project-left {
     width: 50%;
