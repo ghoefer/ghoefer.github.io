@@ -9,21 +9,26 @@
     <link href="../../public/styles.css" rel="stylesheet">
  
     <style>
-        body {
-            text-align: center;
-            margin-top: 5%;
+        wrapper {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
         }
         h1 {
             font-size: 36px;
+            text-align: center;
         }
         p {
             font-size: 18px;
             color: #777;
             margin: 2px;
+            text-align: center;
         }
         .countdown {
             font-size: 24px;
             color: white;
+            text-align: center;
         }
 
         img{
@@ -34,12 +39,33 @@
 </head>
 
 <body>
+    
+    <!-- NAVBAR -->
+    <div id="topnav-container" class="topnav-container">
+        <!-- <a id="name-button" href="index.html">Gabby Hoefer</a>
+        <div class="topnav-parent"></div>
+    </div> -->
+    <!--Typical standard [boring ;)] main navbar across the top of page -->
+        <a id="name-button" href="../../public/index.html">Gabby Hoefer</a>
+        <menu>
+            <a href="../../src/uxresearch/uxresearch.html">UX Research</a>
+            <a href="../../src/ai/ai.html">AI</a>
+            <a href="../../src/art/art.html">Art with Code</a>
+            <a href="../../src/publications/publications.html">Publications</a>
+            <a href="../../src/about/about.html">About</a>
+        </menu>
+    </div>
+ <!-- END NAVBAR -->
+
+ <wrapper>
     <h1>Coming Soon</h1>
     <p>I'm making this page awesome and can't wait to share it with you.</p>
     <p>Bella is also waiting in anticipation.</p>
     <img src="bella-waiting.png" alt="Rabbit" width="500">
 
     <div class="countdown" id="countdown"></div>
+
+</wrapper>
 
     <script>
         // Set your target date and time for the launch
