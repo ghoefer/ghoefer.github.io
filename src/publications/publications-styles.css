@@ -27,8 +27,9 @@ a {
 }
 
 .pubs-list ul {
-    list-style-type: disc; /* You can change 'disc' to 'circle', 'square', or 'none' */
-    margin-left: 20px; /* Adjust margin as needed */
+    list-style-type: disc;
+    margin-left: 20px; 
+    width: 60vw;
 }
 
 .pub-authors{
