@@ -5,14 +5,63 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>UX Research Projects</title>
-    <link href="comingsoon-styles.css" rel="stylesheet">
+    <title>Coming Soon</title>
     <link href="../../public/styles.css" rel="stylesheet">
+ 
+    <style>
+        body {
+            text-align: center;
+            margin-top: 20%;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 18px;
+            color: #777;
+            margin: 2px;
+        }
+        .countdown {
+            font-size: 24px;
+            color: white;
+        }
+
+        img{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 
 <body>
+    <h1>Coming Soon</h1>
+    <p>I'm making this page awesome and can't wait to share it with you.</p>
+    <p>Bella is also waiting in anticipation.</p>
+    <img src="bella-waiting.png" alt="Rabbit" width="500">
 
-    <p>hi</p>
+    <div class="countdown" id="countdown"></div>
 
+    <script>
+        // Set your target date and time for the launch
+        const targetDate = new Date("2023-12-31T00:00:00").getTime();
+
+        // Update the countdown every second
+        const countdown = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            if (distance <= 0) {
+                clearInterval(countdown);
+                document.getElementById("countdown").innerHTML = "We're here!";
+            } else {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            }
+        }, 1000);
+    </script>
 </body>
 </html>
