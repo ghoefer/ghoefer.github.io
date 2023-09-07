@@ -1,0 +1,36 @@
+top{
+    padding-left: 20px;
+    display:flex;
+    flex-direction: column;
+}
+
+#description {
+    font-size: 20px;
+    margin-bottom: 20px;
+    width: 50vw;
+}
+
+.subheading{
+    padding-left: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+a {
+    color: lightcoral;
+}
+
+.pub-title {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pubs-list ul {
+    list-style-type: disc; /* You can change 'disc' to 'circle', 'square', or 'none' */
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+.pub-authors{
+    font-size: 14px;
+}

@@ -1,38 +1,69 @@
-<!-- HTML UXR page -->
+<!-- HTML main page -->
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>Publications</title>
+    <title>About</title>
+    <link href="publications-styles.css" rel="stylesheet">
     <link href="../../public/styles.css" rel="stylesheet">
- 
-    <style>
-        h1 {
-            font-size: 36px;
-        }
-        p {
-            font-size: 18px;
-            color: #777;
-            margin: 2px;
-        }
-        .countdown {
-            font-size: 24px;
-            color: white;
-        }
+    <!-- Add icon library -- w3 schools -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        img{
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-    </style>
 </head>
 
 <body>
-    <h1>Publications</h1>
-    <p>I love conducting research and sometimes I am fortunate enough to publish it!</p>
 
- 
+<!-- NAVBAR -->
+    <div id="topnav-container" class="topnav-container">
+        <!-- <a id="name-button" href="index.html">Gabby Hoefer</a>
+        <div class="topnav-parent"></div>
+    </div> -->
+    <!--Typical standard [boring ;)] main navbar across the top of page -->
+        <a id="name-button" href="../../public/index.html">Gabby Hoefer</a>
+        <menu>
+            <a href="../../src/uxresearch/uxresearch.html">UX Research</a>
+            <a href="../../src/ai/ai.html">AI</a>
+            <a href="../../src/art/art.html">Art with Code</a>
+            <a href="../../src/publications/publications.html">Publications</a>
+            <a href="../../src/about/about.html">About</a>
+        </menu>
+    </div>
+ <!-- END NAVBAR -->
+
+<!-- content -->
+<top>
+    <h1>Publications</h1>
+    <div id="description">If you couldn't already tell, research is a passion of mine. Sometimes I am fortunate enough to publish my work in journals and conferences.</div>
+</top>
+
+<!-- list of publications -->
+<div class="pubs-list" id="publications">
+    <div class="subheading">Academic Conferences & Journals</div>
+    <ul>
+    <div class="pub">
+      <div class="pub-title">Bridging the Social Distance: Offline to Online Social Support during the COVID-19 Pandemic
+      </div>
+      <div class="pub-authors">
+       <em>Gabby Hoefer</em>, Talie Massachi, Neil G Xu, Nicole Nugent, Jeff Huang. 
+       <br>Proceedings of the ACM on Human-Computer Interaction (<strong>CSCW 2022</strong>) 
+        <a href="https://jeffhuang.com/papers/BridgingSocialDistance_CSCW22.pdf">PDF</a> & <a href="https://www.youtube.com/watch?v=dAfY9YHvhIs">Video</a>
+    </ul>
+</div>
+
+
+<!-- list of publications -->
+<div class="pubs-list" id="publications">
+    <div class="subheading">Industry Conferences</div>
+</div>
+
+<!-- list of publications -->
+<div class="pubs-list" id="publications">
+    <div class="subheading">Writing</div>
+</div>
+
+
 </body>
+
 </html>
