@@ -5,6 +5,9 @@ section{
 
 .top-section{
     padding-left: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 #date{
     color: #DDD;
@@ -45,8 +48,26 @@ line-height: normal;
     padding: 5px;
     border-radius: 6px;
 }
+.label-container {
+    margin: 0;
+    padding: 0;
+    margin-top: 6px
+}
 
 .blue{
     background-color: blue;
     color: white;
+}
+
+#top-left{
+    width: 70%;
+}
+
+#top-right{
+    /* margin-right: 20px; */
+    display: flex;
+    width: 30%;
+    justify-content: flex-end;
+    padding-top: 20px;
+    padding-right: 30px;
 }
