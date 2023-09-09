@@ -1,0 +1,52 @@
+section{
+    display: flex;
+
+}
+
+.top-section{
+    padding-left: 30px;
+}
+#date{
+    color: #DDD;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding:0px;
+    padding-top: 20px;
+    margin:0;
+}
+
+.company-title{
+    color: #FFF;
+font-family: Helvetica;
+font-size: 50px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.top-details {
+    color: #DDD;
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* padding-top: 8px; */
+}
+
+.top-labels{
+    padding-top: 16px;
+
+}
+.padded-label {
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}

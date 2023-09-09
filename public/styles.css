@@ -160,3 +160,11 @@ height: 100%;
 a {
     text-decoration: none;
 }
+
+
+.title-subpage {
+    font-weight: 600;
+    font-size: 30px;
+    padding: 30px;
+    color: #E8E8EA;
+}
