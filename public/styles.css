@@ -168,3 +168,12 @@ a {
     padding: 30px;
     color: #E8E8EA;
 }
+
+row-wrapper{
+    display: flex;
+    flex-direction: row;
+}
+
+bold{
+    font-weight: 700;    
+}
