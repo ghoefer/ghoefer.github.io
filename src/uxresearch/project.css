@@ -1,6 +1,6 @@
 section{
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 100px;
     padding-left: 10px;
     padding-right: 10px;
     flex-direction: column;
@@ -86,6 +86,7 @@ line-height: normal;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    padding-bottom: 100px;
 }
 
 .heading-rect{
@@ -111,6 +112,10 @@ line-height: normal;
     background-color: #1D49B2;;
 }
 
+.black-1-bg{
+    background-color: #1E2027;
+}
+
 
 /* TEAM */
 .team-chart-teammate{
@@ -132,9 +137,41 @@ line-height: normal;
 
 .team-chart {
     width: 50%;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     justify-content: flex-start;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
+    /* padding-top: 50px;
+    padding-bottom: 50px; */
+}
+
+
+/* BIG IDEA */
+
+.big-idea{
+display: flex;
+justify-content: center;
+width: 100%;
+flex-direction: column;
+align-items: center;
+padding-top: 50px;
+padding-bottom: 50px;
+}
+.main-point-smallheading{
+    color: #FFF;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.main-point{
+    color: #FFF;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 70vw;
 }
