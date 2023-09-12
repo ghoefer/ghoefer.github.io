@@ -4,6 +4,7 @@ body{
     margin: 0px;
     background-color: #0A0B10;
     color:white;
+    overflow-x: hidden;
 }
 
 

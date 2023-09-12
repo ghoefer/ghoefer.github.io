@@ -116,6 +116,10 @@ line-height: normal;
     background-color: #1E2027;
 }
 
+.black-2-bg{
+background-color: #303030;    
+}
+
 
 /* TEAM */
 .team-chart-teammate{
@@ -174,4 +178,43 @@ padding-bottom: 50px;
     font-weight: 700;
     line-height: normal;
     width: 70vw;
+}
+
+
+/* USER NEEDS SECTION */
+.userneed-wrapper{
+    display: flex;
+    flex-direction: row;
+    /* width: 90%; */
+    overflow-x: hidden;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.userneed-desc{
+    color: #FFF;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: #373737;
+    padding: 40px;
+    align-self: center;
+    align-self: flex-end;
+    width: 70%;
+ 
+}
+
+.userneed-imgs{
+    display: flex;
+    justify-content: center;
+    /* width: auto; */
+}
+.userneed-img{
+    width: 90%;
+    object-fit: contain;
+    overflow: hidden;
+    /* align-self: center; */
+
 }
