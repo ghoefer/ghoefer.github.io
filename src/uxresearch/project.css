@@ -229,3 +229,15 @@ padding-bottom: 50px;
     flex-direction: row;
     justify-content: center;
 }
+
+.confidentiality-notice{
+    width: 400px;
+    color: #D3D3D3;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-style: italic;
+    padding-left: 30px;
+    padding-top: 50px;
+}
