@@ -32,3 +32,21 @@
 .img-with-label-img{
     height: 200px;
 }
+
+#timeline-diagram{
+    width: 100%;
+}
+
+#unity-background-heading{
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 10px;
+    align-self: flex-start;
+
+}
+
+#unity-logo{
+    height: 50px;
+}
