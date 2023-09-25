@@ -120,6 +120,10 @@ line-height: normal;
 background-color: #303030;    
 }
 
+.gray-1-bg{
+    background-color: #5A5A5A;
+}
+
 
 /* TEAM */
 .team-chart-teammate{
@@ -169,6 +173,7 @@ padding-bottom: 50px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    padding-bottom: 15px;
 }
 
 .main-point{

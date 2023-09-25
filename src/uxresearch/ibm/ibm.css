@@ -1,5 +1,34 @@
+#goal-diagram{
+    width: 80%;
+    height: auto;
+    align-self: center;
+}
 
+#goal-quote{
+    font-family: Helvetica;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+    width: 409px;
+    padding-left: 30px;
+}
 
+.img-with-label-label{
+    color: #FFF;
+    text-align: center;
+    font-family: Helvetica;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
+.container-LR{
+    width: 100%;
+    overflow: hidden;
+}
 
-
+.img-with-label-img{
+    height: 200px;
+}
