@@ -60,10 +60,9 @@ line-height: normal;
 }
 
 .qual-label{
-    background-color: #0062FF;
-    color: white;
+    background-color: #97C1FF;
+    color: black;
     margin-bottom: 20px;
-    color: white;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -71,7 +70,7 @@ line-height: normal;
 }
 
 .quant-label{
-    background-color: #C4C4C4;
+    background-color: #F7F1FF;
     color: black;
     margin-bottom: 20px;
     color: #000;
