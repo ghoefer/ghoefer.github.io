@@ -69,3 +69,10 @@
 #participant-text-list{
 padding-left: 25px;
 }
+
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+}
