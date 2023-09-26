@@ -122,6 +122,14 @@ background-color: #303030;
     background-color: #5A5A5A;
 }
 
+.gray-2-bg{
+    background-color: #E8E8E8;
+}
+
+.black-2-text{
+    color: #303030;
+}
+
 
 /* TEAM */
 .team-chart-teammate{
