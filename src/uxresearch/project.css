@@ -83,7 +83,17 @@ line-height: normal;
 .research-label-container {
     margin: 20px;
 }
+.mixedmeth-label{
+    background-color: #97C1FF;
+    color: black;
+    margin-bottom: 20px;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 
+}
 
 .blue{
     background-color: #004AB9;
@@ -376,12 +386,10 @@ card-group{
     justify-content: center;
     padding: 20px;
     margin: 20px;
-    background: rgba(213, 217, 224, 0.54);
     width: 322px;
     
 }
 .quote-desc{
-    color: #000;
     font-size: 20px;
     font-weight: 400;
     line-height: normal;
