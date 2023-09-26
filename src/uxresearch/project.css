@@ -366,6 +366,7 @@ card-group{
     width: 90%;
     display: flex;
     justify-content: flex-start;
+    max-height: 60vh;
 }
 
 .quote-wrapper{
