@@ -311,3 +311,8 @@ padding-bottom: 50px;
     line-height: normal;
     padding-top: 20px;
 }
+
+card-group{
+    display: flex;
+    flex-direction: row;
+}

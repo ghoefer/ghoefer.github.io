@@ -1,9 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const card = document.querySelector(".card");
+    const cards = document.querySelectorAll(".card");
 
-    // Add a click event listener to open the PDF when the card is clicked
-    card.addEventListener("click", function () {
-        const link = document.querySelector(".card-link");
-        link.click();
+    cards.forEach(function (card) {
+        const pdfPath = card.getAttribute("data-pdf");
+        card.addEventListener("click", function () {
+            window.open(pdfPath, "_blank");
+        });
     });
 });
