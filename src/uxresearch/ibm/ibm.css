@@ -55,3 +55,17 @@
     height: 300px;
     padding-left: 10px;
 }
+
+#participant-wheel{
+    height: 460px;
+    padding-right: 20px;
+    align-self: end;
+}
+#participant-wheel-text{
+    font-size: 18px;
+    align-self: start;
+    width: 80%;
+}
+#participant-text-list{
+padding-left: 25px;
+}
