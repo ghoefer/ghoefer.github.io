@@ -50,17 +50,15 @@ line-height: normal;
 
 }
 .padded-label {
-    padding: 5px;
+    padding: 8px;
     border-radius: 6px;
 }
 .label-container {
-    margin: 0;
-    padding: 0;
-    margin-top: 6px
+    margin: 10px;
 }
 
 .blue{
-    background-color: blue;
+    background-color: #004AB9;
     color: white;
 }
 
@@ -250,6 +248,7 @@ padding-bottom: 50px;
     padding-top: 80px;
     padding-left: 30px;
     padding-right: 30px;
+    
 }
 * {
     margin: 0;
@@ -261,7 +260,7 @@ padding-bottom: 50px;
 .card {
     width: 325px;
     height: 340px;
-    background-color: #f0f0f0;
+    background-color: #818181;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -277,11 +276,38 @@ padding-bottom: 50px;
 
 /* Style the card content */
 .card-content {
-    text-align: center;
     padding: 20px;
+    height: 80%;
 }
 
 /* Style the card link */
 .card-link {
     display: none; /* Hide the link by default */
+}
+
+
+.card-bottom-container {
+    background-color: white;
+    color:#494949;
+    height: 20%;
+    position: relative;
+    bottom: 0;
+    height: 40%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.card-big-text{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 20px;
 }
