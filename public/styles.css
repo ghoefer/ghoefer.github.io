@@ -76,6 +76,25 @@ menu a:hover{
     color: #E8EAEE;
 }
 
+    /* Navbar auto hide/show feature is bootstrapped
+    Find it here https://bootstrap-menu.com/detail-autohide.html */
+    .scrolled-down{
+        transform:translateY(-100%); transition: all 0.3s ease-in-out;
+    }
+    .scrolled-up{
+        transform:translateY(0); transition: all 0.3s ease-in-out;
+    }
+
+    .autohide{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1030;
+    }
+
+
 
 /* landing page */
 
@@ -213,6 +232,7 @@ a {
     font-weight: 600;
     font-size: 30px;
     padding: 30px;
+    /* margin-top: 50px; */
     color: #E8E8EA;
 }
 
@@ -313,3 +333,5 @@ blue-text{
 a:hover{
     opacity: 60%;
 }
+
+
