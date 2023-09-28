@@ -215,6 +215,7 @@ a {
 row-wrapper{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 bold{
