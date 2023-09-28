@@ -7,6 +7,13 @@ body{
     overflow-x: hidden;
 }
 
+.home-img{
+    background-image: url('assets/joel-jasmin-forestbird-N7WKDfi0yqQ-unsplash.jpg');
+    background-size: cover;
+    height: 100vh;
+    background-position: bottom;
+}
+
 
 /* navbar  */
 
@@ -67,10 +74,13 @@ menu a:hover{
 top-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    height: 50vh;
+    justify-content: flex-start;
+    /* height: 50vh; */
     overflow: hidden;
-    padding: 10vh;
+    padding-top: 5vh;
+    padding-left: 30px;
+    padding-right: 30px;
+    align-items: center;
 }
 
 #landing-description-text {
@@ -78,15 +88,22 @@ font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 25px;
-align-items: center;
+align-items: left;
 text-align: left;
 display:flex;
 justify-content: center;
 height: 100%;
+width: 60%;
+padding-left: 30px;
+
 }
 
 #landing-description-text p {
     margin:10px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 #landing-image-container img{
@@ -105,6 +122,27 @@ height: 100%;
     overflow: hidden;
 }
 
+
+#bigname{
+    color: #FFF;
+    font-family: Roboto Mono;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-left: 30px;
+}
+
+/* .module h2 {
+    font-size: 1em;
+    container-name: bigname
+  }
+  
+  @container bigname (min-width: 700px) {
+    .module h2 {
+      font-size: 2em;
+    }
+  } */
 
 /* #bottom-question-text{
     text-align: center;
@@ -253,4 +291,16 @@ blue-text{
     padding-left: 20px;
     padding-top: 18px;
     align-self: flex-start;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.white{
+    color: white;
+}
+
+a:hover{
+    opacity: 60%;
 }
