@@ -119,3 +119,11 @@ keyword p, keyword line {
     padding: 0px;
     margin: 0px;
 }
+
+#ibm-unity-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2);
+    background-position: center;
+}
