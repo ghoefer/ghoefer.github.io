@@ -1,7 +1,15 @@
+.bigprojectimg{
+    background-image: url('assets/laptopblack.png');
+    /* background-image: url('assets/unity-many-screens.svg'); */
+    background-position: center;
+    background-color: black;
+}
+
 #goal-diagram{
     width: 80%;
     height: auto;
     align-self: center;
+    background-size: contain;
 }
 
 #goal-quote{

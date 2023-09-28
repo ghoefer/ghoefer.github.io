@@ -8,6 +8,14 @@ section{
 
 /* TOP SECTION */
 
+.bigprojectimg{
+    /* background-image: url('assets/unitylaptoponblock.svg'); */
+    background-size: contain;
+    height: 85vh;
+    background-repeat: no-repeat;
+    
+}
+
 .top-section{
     padding-left: 20px;
     display: flex;
@@ -361,7 +369,7 @@ card-group{
     display: flex;
     flex-direction: row;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 
@@ -395,3 +403,8 @@ card-group{
     font-style: italic;
 }
 
+.bottom-img{
+    width: 100vw;
+    height: 80vh;
+    object-fit: cover;
+}
