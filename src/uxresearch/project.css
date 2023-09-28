@@ -76,10 +76,9 @@ line-height: normal;
 }
 
 .quant-label{
-    background-color: #F7F1FF;
-    color: black;
+    background-color: #004AB9;
+    color: white;
     margin-bottom: 20px;
-    color: #000;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
@@ -90,7 +89,7 @@ line-height: normal;
     margin: 20px;
 }
 .mixedmeth-label{
-    background-color: #97C1FF;
+    background-color: #E8EAEE;
     color: black;
     margin-bottom: 20px;
     color: #000;
@@ -101,8 +100,8 @@ line-height: normal;
 
 }
 
-.blue{
-    background-color: #004AB9;
+.blue-gray{
+    background-color: #2D2F3A;
     color: white;
 }
 
@@ -279,9 +278,9 @@ padding-bottom: 50px;
     color: #FFF;
     font-size: 25px;
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     line-height: normal;
-    background-color: #373737;
+    background-color: #1E2027;
     padding: 40px;
     align-self: center;
     align-self: center;
@@ -340,7 +339,7 @@ padding-bottom: 50px;
 .card {
     width: 325px;
     height: 340px;
-    background-color: #818181;
+    background-color: #1D49B2;
     border-radius: 10px;
     display: flex;
     flex-direction: column;

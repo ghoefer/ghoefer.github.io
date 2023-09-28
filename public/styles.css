@@ -50,11 +50,11 @@ menu{
 }
 
 menu a{
-    color: #687686;
+    color: white;
 }
 
 menu a:hover{
-    color: #E8E8EA;
+    color: #E8EAEE;
 }
 
 #name-button, menu a{
@@ -69,7 +69,11 @@ menu a:hover{
     align-self: center;
     font-size: 20px;
     font-weight: bold;
-    color: #E8E8EA;
+    color: white;
+}
+
+#name-button:hover{
+    color: #E8EAEE;
 }
 
 
@@ -222,7 +226,7 @@ bold{
     font-weight: 700;    
 }
 blue-text{
-    color:#0056D2;
+    color:#0062FF;
 }
 
 
