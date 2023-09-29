@@ -12,6 +12,7 @@ body{
 }
 
 .home-img{
+    /* Photo by <a href="https://unsplash.com/@kirp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Kliatskyi</a> on <a href="https://unsplash.com/photos/jpu0gMXT9to?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
     background-image: url('assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg');
     background-size: cover;
     height: 70vh;
