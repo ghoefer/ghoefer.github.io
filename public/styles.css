@@ -14,9 +14,24 @@ body{
 .home-img{
     background-image: url('assets/osman-rana-G7VN8NadjO0-unsplash.jpg');
     background-size: cover;
-    height: 100vh;
-    background-position: bottom;
+    height: 70vh;
+    background-position: center;
 }
+
+.parallax {
+    /* from w3 schools */
+    /* The image used */
+    /* background-image: url("img_parallax.jpg"); */
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 
 /* navbar  */
