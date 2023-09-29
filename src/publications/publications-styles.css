@@ -30,6 +30,9 @@ top{
     font-weight: 600;
     margin-bottom: 5px;
 }
+.pubs-list{
+    padding-bottom: 30px;
+}
 
 .pubs-list ul {
     list-style-type: disc;
