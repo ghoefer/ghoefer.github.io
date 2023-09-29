@@ -389,8 +389,8 @@ a:hover{
 
 .project-card{
     width: 33.3%;
-    height: 30vh;
-    background: gray;
+    height: 40vh;
+    background: #E8EAEE;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -407,11 +407,14 @@ a:hover{
 .project-card-name{
     font-size: 20px;
     font-weight: 700;
-    visibility: hidden;
 }
 
-.project-card-role{
+.project-card-role, .project-card-name{
+    color:black;
     visibility: hidden;
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
 }
 
 project-card-text{
@@ -421,18 +424,21 @@ project-card-text{
     flex-direction: column;
 }
 
-.project-img:hover{
+.project-card:hover .project-img{
+    -webkit-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
     filter: blur(4px);
+    opacity: 0.7;
 }
+
+
 .project-card:hover .project-card-name{
     visibility: visible;
-    color: black;
 }
 
 .project-card:hover .project-card-role{
     visibility: visible;
-    color: black;
-    
 }
 
 .project-img{
