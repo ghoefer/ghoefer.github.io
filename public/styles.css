@@ -160,68 +160,97 @@ padding-left: 30px;
     padding-left: 30px;
 }
 
-/* .module h2 {
-    font-size: 1em;
-    container-name: bigname
-  }
-  
-  @container bigname (min-width: 700px) {
-    .module h2 {
-      font-size: 2em;
-    }
-  } */
-
-/* #bottom-question-text{
-    text-align: center;
-    align-self:center;
-}
-
-.bottom-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 15vh;
-    background-color: #f1f1f1;
-    overflow: hidden;
-    bottom: 0px;
-    position: absolute;
-    width: 100%;
-}
-
-.bottom-text {
-    display:flex;
-    width: 0px;
-    white-space: nowrap;
-}
-
-.bottom-text p {
-    margin: 10px;
-    z-index: 100;
-    position: relative;
-    white-space: nowrap;
-}
-
-/* Show bottom-text on top of bottom-img  */
-/* .bottom-img {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
-
-
-.bottom-column {
-    display: flex;
-    overflow: hidden;
-    min-width: 200px;
-    width:100%;
-    background: blue;
-}  */
-
+/* FOOTER STUFF */
 .footer {
     display: flex;
     justify-content: center;
 }
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+menu-footer{
+    align-items: center;
+    display: flex;
+    margin-top: 30px;
+}
+
+menu-footer a{
+    padding-right: 20px;
+    color: white;
+    font-size: 16px; 
+}
+
+menu-footer a:hover{
+    color: #E8EAEE;
+
+}
+
+#footer-name{
+    margin-top: 50px;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#footer-p{
+    margin-top: 30px;
+    margin-bottom: 50px;
+    font-size: 16px; 
+}
+
+
+/* Social media bar and location */
+.social-media-bar, #location {
+    margin: 10px;
+    align-self: flex-start;
+}
+
+#location{
+    font-size: 14px;
+    font-weight: 600;
+    /* color: #E8E8EA; */
+}
+.social-media-bar{
+    margin-top: 30px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 12px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+  
+  .dark-icon{
+    background-color: black;
+    color: white;
+  }
+  .light-icon{
+    background-color: white;
+    color: black;
+  }
+
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+
+  .fa-footer {
+    padding: 12px;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 50%;
+  }
+
 
 a {
     text-decoration: none;
