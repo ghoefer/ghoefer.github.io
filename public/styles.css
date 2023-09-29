@@ -12,10 +12,10 @@ body{
 }
 
 .home-img{
-    background-image: url('assets/osman-rana-G7VN8NadjO0-unsplash.jpg');
+    background-image: url('assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg');
     background-size: cover;
     height: 70vh;
-    background-position: center;
+    background-position: bottom;
 }
 
 .parallax {
