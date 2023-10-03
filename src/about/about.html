@@ -64,31 +64,14 @@
         </div>
 </div>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer">
-            <div class="footer-content">
-                <div id="footer-name">Gabby Hoefer</div>
-                    <menu-footer>
-                        <a href="../../src/uxresearch/uxresearch.html">UX Research</a>
-                        <a href="../../src/ai/ai.html">AI</a>
-                        <a href="../../src/art/art.html">Art with Code</a>
-                        <a href="../../src/publications/publications.html">Publications</a>
-                        <a href="../../src/about/about.html">About</a>
-                    </menu-footer>
-                    <footer-icons>
-                        <!-- Social media bar with all of my links -->
-                        <div class="social-media-bar">
-                            <a href="https://www.linkedin.com/in/ghoefer" target="_blank" class="fa light-icon fa-linkedin"></a>
-                            <a href="https://github.com/ghoefer" target="_blank" class="fa light-icon fa-github"></a>
-                            <a href="https://dribbble.com/gabbby" target="_blank" class="fa light-icon fa-dribbble"></a>
-                            <a href="https://medium.com/@gabbyhoefer" target="_blank" class="fa light-icon fa-medium"></a>
-                        </div>
-                    </footer-icons>
-                    <p id="footer-p">Copyright ©2023 Gabby Hoefer</p>
-            </div> 
-        </div>
-    </footer>
+<!-- FOOTER -->
+<footer id="footer-placeholder"></footer>
+<script>
+    $.get("../../../public/components/nav.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });   
+</script>
+<!-- END FOOTER -->
 
 </body>
 
