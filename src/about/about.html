@@ -17,10 +17,10 @@
 
 <!--Navigation bar-->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="../../../public/js/nav.js"></script>
+<script src="../../public/js/nav.js"></script>
 <div id="nav-placeholder" class="autohide navbar"></div>
 <script>
-    $.get("../../../public/components/nav.html", function(data){
+    $.get("../../public/components/nav.html", function(data){
         $("#nav-placeholder").replaceWith(data);
         $.getScript("../../../public/js/nav.js",function(){
         navfunction();});
@@ -67,7 +67,7 @@
 <!-- FOOTER -->
 <footer id="footer-placeholder"></footer>
 <script>
-    $.get("../../../public/components/nav.html", function(data){
+    $.get("../../public/components/footer.html", function(data){
         $("#footer-placeholder").replaceWith(data);
     });   
 </script>
