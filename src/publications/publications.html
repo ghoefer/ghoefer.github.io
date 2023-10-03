@@ -18,24 +18,18 @@
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar autohide">
-    <div id="topnav-container" class="topnav-container">
-        <!-- <a id="name-button" href="index.html">Gabby Hoefer</a>
-        <div class="topnav-parent"></div>
-    </div> -->
-    <!--Typical standard [boring ;)] main navbar across the top of page -->
-        <a id="name-button" href="../../public/index.html">Gabby Hoefer</a>
-        <menu>
-            <a href="../../src/uxresearch/uxresearch.html">UX Research</a>
-            <a href="../../src/comingsoon/comingsoon.html">AI</a>
-            <a href="../../src/comingsoon/comingsoon.html">Art with Code</a>
-            <a href="../../src/publications/publications.html">Publications</a>
-            <a href="../../src/about/about.html">About</a>
-        </menu>
-    </div>
-</nav>
- <!-- END NAVBAR -->
+<!--Navigation bar-->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="../../../public/js/nav.js"></script>
+<div id="nav-placeholder" class="autohide navbar"></div>
+<script>
+    $.get("../../../public/components/nav.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+        $.getScript("../../../public/js/nav.js",function(){
+        navfunction();});
+    });   
+</script>
+<!--end of Navigation bar-->
 
 <!-- content -->
 <top>

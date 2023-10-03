@@ -12,18 +12,18 @@
 
 <body>  
 <div class="home-img parallax">
-    
+
 <!--Navigation bar-->
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="js/nav.js"></script>
-    <div id="nav-placeholder" class="autohide navbar"></div>
-    <script>
-        $.get("components/nav.html", function(data){
-            $("#nav-placeholder").replaceWith(data);
-            $.getScript("js/nav.js",function(){
-            navfunction();});
-        });   
-    </script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="../../../public/js/nav.js"></script>
+<div id="nav-placeholder" class="autohide navbar"></div>
+<script>
+    $.get("../../../public/components/nav.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+        $.getScript("../../../public/js/nav.js",function(){
+        navfunction();});
+    });   
+</script>
 <!--end of Navigation bar-->
 
     <div class="container">
