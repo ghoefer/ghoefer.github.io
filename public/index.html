@@ -8,29 +8,22 @@
     <title>Gabby Hoefer</title>
     <link href="styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="js/script.js"></script>
+    
+
 </head>
 
 <body>  
 <div class="home-img parallax">
-<!-- NAVBAR -->
-<nav class="navbar autohide">
-    <div id="topnav-container" class="topnav-container">
-        <!-- <a id="name-button" href="index.html">Gabby Hoefer</a>
-        <div class="topnav-parent"></div>
-    </div> -->
-    <!--Typical standard [boring ;)] main navbar across the top of page -->
-        <a id="name-button" href="../public/index.html">Gabby Hoefer</a>
-        <menu>
-            <a href="../src/uxresearch/uxresearch.html">UX Research</a>
-            <a href="../src/comingsoon/comingsoon.html">AI</a>
-            <a href="../src/comingsoon/comingsoon.html">Art with Code</a>
-            <a href="../src/publications/publications.html">Publications</a>
-            <a href="../src/about/about.html">About</a>
-        </menu>
-    </div>
-</nav>
- <!-- END NAVBAR -->
+<!--Navigation bar-->
+    <div id="nav-placeholder" class="autohide"></div>
+    <script>
+        $.get("nav.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
+<!--end of Navigation bar-->
 
     <div class="container">
         
