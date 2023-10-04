@@ -458,6 +458,7 @@ a:hover{
     visibility:hidden;
     opacity:0;
     transition:visibility 200ms linear,opacity 200ms linear;
+    cursor: pointer;
 }
 
 project-card-text{
