@@ -419,6 +419,17 @@ a:hover{
     opacity: 60%;
 }
 
+.button{
+    /* remove all default styling */
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
 
 .project-card{
     width: 33.3%;
