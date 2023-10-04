@@ -243,7 +243,7 @@ menu-footer a:hover{
     font-weight: 600;
     /* color: #E8E8EA; */
 }
-.social-media-bar{
+footer-menu .social-media-bar{
     margin-top: 30px;
 }
 
@@ -257,12 +257,12 @@ menu-footer a:hover{
   }
   
   .dark-icon{
-    background-color: black;
+    background-color: #2D2F3A;
     color: white;
   }
   .light-icon{
     background-color: white;
-    color: black;
+    color: #2D2F3A;
   }
 
   /* Add a hover effect if you want */
@@ -346,6 +346,33 @@ blue-text{
     padding-top: 10px;
 }
 
+.secondary-button{
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    /* background-color: #2D2F3A; 
+    color: white;  */
+    border: 2px solid white;
+    background-color: white;
+    color:#2D2F3A;
+    border: 2px solid #2D2F3A;
+    border-radius: 6px;
+}
+
+.secondary-button:hover {
+    /* opacity: 0.7; */
+    background-color: #2D2F3A; 
+    color: white; 
+  }
+
+
+
 .LR-text{
     padding-top: 80px;
     width: 70%;
@@ -388,7 +415,7 @@ blue-text{
     color: white;
 }
 
-a:hover{
+.underline:hover{
     opacity: 60%;
 }
 
