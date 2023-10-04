@@ -415,7 +415,7 @@ blue-text{
     color: white;
 }
 
-.underline:hover{
+a:hover{
     opacity: 60%;
 }
 
