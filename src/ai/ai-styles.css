@@ -1,0 +1,21 @@
+#description{
+    padding-left: 30px;
+    font-size: 20px;
+    margin-bottom: 50px;
+    width: 550px;
+}
+
+.AI-img-placeholder{
+    background-image: url('https://img.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg');
+}
+
+.beatAI-img{
+    background-image: url('../ai/assets/beatai.png');
+
+}
+
+padding{
+    width: 50px;
+    height: 80px;
+    display: flex;
+}
