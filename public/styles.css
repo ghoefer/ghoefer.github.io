@@ -45,6 +45,7 @@ body{
     margin: 0px;
     /* height: 15vh; */
     background: #2D2F3A;
+    width: 100vw;
     
 }
 
@@ -63,6 +64,7 @@ menu{
     margin: 0px;
     width: fit-content;
     align-items: center;
+    margin-right: 15px;
 }
 
 menu a{
@@ -103,7 +105,7 @@ menu a:hover{
     }
 
     .autohide{
-        position: fixed;
+        position: relative;
         top: 0;
         right: 0;
         left: 0;
@@ -112,9 +114,11 @@ menu a:hover{
     }
 #nav-placeholder{
     width: 200px;
-    height: 35px;
-    opacity: 0;
-    background-color: black;
+    height: 50px;
+    display: flex;
+    /* opacity: 1; */
+    /* background-color: black; */
+    /* position: relative; */
 }
 
 

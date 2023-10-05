@@ -7,7 +7,9 @@ function navfunction() {
   /* Navbar auto hide/show feature is bootstrapped
   Find it here https://bootstrap-menu.com/detail-autohide.html */
 
+
   el_autohide = document.querySelector('.autohide');
+  el_autohide.style.position = "fixed";
 
 //   console.log("is this working");
   // add padding-top to body (if necessary)

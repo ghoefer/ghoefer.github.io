@@ -24,7 +24,7 @@
 <div id="nav-placeholder" class="autohide navbar"></div>
 <script>
     $.get("../../public/components/nav.html", function(data){
-        $("#nav-placeholder").replaceWith(data);
+        $("#nav-placeholder").append(data);
         $.getScript("../../../public/js/nav.js",function(){
         navfunction();});
     });   

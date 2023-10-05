@@ -19,11 +19,13 @@
 <script src="../../../public/js/nav.js"></script>
 <div id="nav-placeholder"></div>
 <script>
-    $.get("../../../public/components/nav.html", function(data){
-        $("#nav-placeholder").replaceWith(data);
-        $.getScript("../../../public/js/nav.js",function(){
-        navfunction();});
-    });   
+    $(document).ready(function() {
+        $.get("../../../public/components/nav.html", function(data){
+            $("#nav-placeholder").append(data);
+            $.getScript("../../../public/js/nav.js",function(){
+            navfunction();});
+            });   
+    });
 </script>
 <!--end of Navigation bar-->
 
