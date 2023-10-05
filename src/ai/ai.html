@@ -1,0 +1,46 @@
+<!-- HTML main page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AI & Code</title>
+    <link href="ai-styles.css" rel="stylesheet">
+    <link href="../../public/styles.css" rel="stylesheet">
+    <!-- Add icon library -- w3 schools -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<!--Navigation bar-->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="../../public/js/nav.js"></script>
+<div id="nav-placeholder" class="autohide navbar"></div>
+<script>
+    $.get("../../public/components/nav.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+        $.getScript("../../../public/js/nav.js",function(){
+        navfunction();});
+    });   
+</script>
+<!--end of Navigation bar-->
+
+<div class="title-subpage">AI & Code Projects</div>
+
+
+
+
+<!-- FOOTER -->
+<footer id="footer-placeholder"></footer>
+<script>
+    $.get("../../public/components/footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });   
+</script>
+<!-- END FOOTER -->
+
+</body>
+
+</html>
