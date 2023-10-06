@@ -394,6 +394,7 @@ card-group{
     flex-direction: row;
     width: 100%;
     padding-top:20px;
+    justify-content: center;
     /* overflow: hidden; */
 }
 
