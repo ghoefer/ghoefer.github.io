@@ -89,7 +89,7 @@ line-height: normal;
     margin: 20px;
 }
 .mixedmeth-label{
-    background-color: #E8EAEE;
+    background-color: white;
     color: black;
     margin-bottom: 20px;
     color: #000;
@@ -410,6 +410,13 @@ card-group{
     display: flex;
     justify-content: flex-start;
     max-height: 60vh;
+}
+
+.circle-right-side-image{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    max-height: 50vh;
 }
 
 .quote-wrapper{
