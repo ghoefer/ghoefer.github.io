@@ -3,3 +3,13 @@
     background-position: center;
     background-color: black;
 }
+
+.userneed-img{
+    width: 50%;
+}
+
+#businessval-diagram{
+    width: 70%;
+    padding-right: 30px;
+    max-height: 50vh;
+}
