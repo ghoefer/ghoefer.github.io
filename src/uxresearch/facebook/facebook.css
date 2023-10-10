@@ -14,3 +14,42 @@
     max-height: 50vh;
 }
 
+#comp-analysis-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#companalysis-img{
+width: 70vw;
+padding-left: 10px;
+padding-top: 30px;
+}
+
+#design-idea{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+#des-border-wrapper{
+    overflow-x: hidden;
+    justify-content: center;
+    padding: 30px;
+    margin: 30px;
+    width: 322px;
+    height:fit-content;
+    border: 1px solid black;
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+}
+
+#specsheet{
+    height: 500px;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    padding-right:10px;
+}
