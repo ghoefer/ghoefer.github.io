@@ -410,6 +410,21 @@ blue-text{
     padding-top: 18px;
     align-self: flex-start;
 }
+.small-text-heading{
+    /* max-width: 20vw; */
+    font-size: 20px;
+    align-self: flex-start;
+    font-weight: 700;
+    padding-left: 20px;
+}
+
+.small-text-subheading{
+    /* max-width: 20vw; */
+    font-size: 16px;
+    align-self: flex-start;
+    padding-left: 20px;
+    padding-top: 18px;
+}
 
 .underline{
     text-decoration: underline;
