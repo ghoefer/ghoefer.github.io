@@ -1,0 +1,163 @@
+<!-- HTML main page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook</title>
+    <link href="facebook.css" rel="stylesheet">
+    <link href="../../../public/styles.css" rel="stylesheet">
+    <link href="../project.css" rel="stylesheet">
+    <!-- Add icon library -- w3 schools -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+<!--Navigation bar-->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="../../../public/js/nav.js"></script>
+<div id="nav-placeholder" class="autohide navbar"></div>
+<script>
+    $.get("../../../public/components/nav.html", function(data){
+        $("#nav-placeholder").append(data);
+        $.getScript("../../../public/js/nav.js",function(){
+        navfunction();});
+    });   
+</script>
+<!--end of Navigation bar-->
+
+
+
+<!-- top section -->
+<section class="bigprojectimg">
+<div class="uxr top-section text">
+    <div id="top-left">
+        <div id="date">2020</div>
+        <div class="company-title">Facebook</div>
+        <div class="top-details">Product Designer</div>
+        <div class="top-details">Oculus Store Team</div>
+
+        <div class="top-labels">
+            <span class="padded-label blue-gray">Figma</span>
+        </div>
+    </div>
+    <div id="top-right">
+        <div class="label-container"><span class="padded-label blue-gray">Intern Project</span></div>
+    </div>
+</div>
+</section>
+
+<!-- summary section -->
+<!-- TODO -->
+<section class="black-2-bg">
+    <div class="project-section-heading">
+        <div class="heading-rect white-bg"></div>
+        <div class="heading-text">SUMMARY</div>
+    </div>
+    <div class="numbered-summary">
+        <div class="numbered-summary-item">
+            <div class="numbered-summary-number circle">1</div>
+            <div class="numbered-summary-text">Problem Evaluation</div>
+        </div>
+        <div class="numbered-summary-item">
+            <div class="numbered-summary-number circle">2</div>
+            <div class="numbered-summary-text">Goals & Value</div>
+        </div>
+        <div class="numbered-summary-item">
+            <div class="numbered-summary-number circle">3</div>
+            <div class="numbered-summary-text">UX Research</div>
+        </div>
+        <div class="numbered-summary-item">
+            <div class="numbered-summary-number circle">4</div>
+            <div class="numbered-summary-text">Spotlight Study</div>
+        </div>
+        <div class="numbered-summary-item">
+            <div class="numbered-summary-number circle">5</div>
+            <div class="numbered-summary-text">Outcomes</div>
+        </div>
+    </div>
+    <div id="summary-line"></div>
+
+    <div class="summary-details">
+        <div class="summary-detail-text-group">
+            <div class="summary-detail-text-heading">The product</div>
+            <div class="summary-detail-text">Unity is a learning platform where CIO teams learn two different essentials to the business.</div>
+        </div>
+        <div class="summary-detail-text-group">
+            <div class="summary-detail-text-heading">Key responsibilities</div>
+            <div class="summary-detail-text">Began as one of several UXRs, then as resources shifted I took on the role of leading UX Research efforts for Unity.</div>
+        </div>
+        <div class="summary-detail-text-group">
+            <div class="summary-detail-text-heading">What made this unique</div>
+            <div class="summary-detail-text">Built, promoted and launched this brand new platform then tested engagement and presented findings to our CIO VP.</div>
+        </div>
+    </div>
+
+</section>
+
+<!-- team section -->
+<section class="blue-bg">
+    <div class="project-section-heading">
+        <div class="heading-rect white-bg"></div>
+        <div class="heading-text">THE PEOPLE (the best part)</div>
+    </div>
+    <row-wrapper>
+        <div class="team-chart">
+            <div class="team-chart-teamname">CIO Unity Team</div>
+            <div class="team-chart-members">
+                <div class="team-chart-names">
+                    <div class="team-chart-teammate-name">Alejandra Padilla</div>
+                    <div class="team-chart-teammate-name">Jen Morgan</div>
+                    <div class="team-chart-teammate-name">Gabby Hoefer</div>
+                    <div class="team-chart-teammate-name">Maddy Barr</div>
+                    <div class="team-chart-teammate-name">Christi Wilbert</div>
+                    <div class="team-chart-teammate-name">Maithily Pendse</div>
+                    <div class="team-chart-teammate-name">Sachin Satyappanavar</div>
+
+                </div>
+
+                <div class ="team-chart-titles">
+                    <div class="team-chart-teammate-title">Product Owner</div>
+                    <div class="team-chart-teammate-title">Product Owner</div>
+                    <div class="team-chart-teammate-title">UX Researcher</div>
+                    <div class="team-chart-teammate-title">Visual Designer</div>
+                    <div class="team-chart-teammate-title">Visual Designer</div>
+                    <div class="team-chart-teammate-title">Business Consultant</div>
+                    <div class="team-chart-teammate-title">Business Consultant</div>
+
+                </div>
+            </div>
+        </div> 
+        <div class="team-chart">
+            <div class="team-chart-teamname">Stakeholders</div>
+            <div class="team-chart-members">
+                <div class="team-chart-names">
+                    <div class="team-chart-teammate-name">Nicole Narcisco</div>
+                    <div class="team-chart-teammate-name">Kathryn Guarini</div>
+                </div>
+                 <div class ="team-chart-titles">
+                    <div class="team-chart-teammate-title">VP, CIO Design</div>
+                    <div class="team-chart-teammate-title">CIO, IBM</div>
+                </div>
+            </div>  
+        </div>
+
+    </row-wrapper>
+    </div>
+</section>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="footer-placeholder"></footer>
+<script>
+    $.get("../../../public/components/footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });   
+</script>
+<!-- END FOOTER -->
+
+</body>
