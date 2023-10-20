@@ -26,6 +26,15 @@
             navfunction();});
             });   
     });
+
+    function responsiveBar() {
+        var menu = document.querySelector('menu'); // Select the menu items
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+    }
 </script>
 <!--end of Navigation bar-->
 

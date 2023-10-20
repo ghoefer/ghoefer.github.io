@@ -48,6 +48,7 @@ body{
     width: 100vw;
     
 }
+  
 
 .topnav-parent{
     display: flex;
@@ -65,6 +66,7 @@ menu{
     width: fit-content;
     align-items: center;
     margin-right: 15px;
+    transition: max-height .2s ease-out;
 }
 
 menu a{
@@ -116,9 +118,13 @@ menu a:hover{
     width: 200px;
     height: 50px;
     display: flex;
-    /* opacity: 1; */
-    /* background-color: black; */
-    /* position: relative; */
+}
+
+/* Style the hamburger menu */
+  .nav-icon {
+    cursor: pointer;
+    display: none; /* Initially hidden on larger screens */
+    color: white;
 }
 
 
@@ -579,6 +585,14 @@ project-card-text{
     margin-bottom: 20px;
     font-size: 14px; 
     color:white; }
+
+      /* TOP NAVBAR */
+      menu {
+        display: none;
+    }
+    .nav-icon {
+        display: flex; /* Displayed on small screens */
+      }
 }
 
 /* Medium: tablets */
@@ -630,6 +644,14 @@ project-card-text{
     padding-right: 10px;
     font-size: 14px; 
     }
+
+    /* TOP NAVBAR */
+    menu {
+        display: none;
+    }
+    .nav-icon {
+        display: flex; /* Displayed on small screens */
+      }
 }
 
 /* Large: laptops */
@@ -654,6 +676,11 @@ project-card-text{
     }
     .project-cards{
         flex-direction: row;
+    }
+
+     /* navbar */
+     menu {
+        display: flex;
     }
 
     
@@ -682,5 +709,12 @@ project-card-text{
     .project-cards{
         flex-direction: row;
     }
+
+    /* navbar */
+    menu {
+        display: flex;
+    }
 }
 
+
+  
