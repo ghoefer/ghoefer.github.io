@@ -340,6 +340,7 @@ padding-bottom: 50px;
     padding-top: 80px;
     padding-left: 30px;
     padding-right: 30px;
+    height: 450px;
     
 }
 * {
@@ -576,7 +577,7 @@ font-size: 20px;
     .padded-label {
         padding: 6px;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 12px;
     margin: 5px;
     }
 
@@ -627,7 +628,7 @@ font-size: 20px;
         padding-bottom: 50px;
     }
     .heading-text{
-        font-size: 14px;
+        font-size: 12px;
     }
     .heading-rect{
         width: 20px;
@@ -704,6 +705,57 @@ font-size: 20px;
     }
     .img-with-label-label{
         font-size: 18px;
+    }
+    /* UXR Overview */
+
+    .container-LR{
+        flex-direction: column;
+    }
+    .left, .right{
+        width: 100%;
+    }
+    .standard-text-heading {
+        max-width: 90vw;
+        font-size: 18px;}
+    .standard-text-subheading {
+        max-width: 80vw;
+        font-size: 12px;
+    }
+    .right{
+        padding-top: 30px;
+    }
+    #unity-logo {
+        height: 30px;}
+
+    #unity-background-heading {
+            font-size: 35px;}
+    
+    .card-container {
+        padding-left: 15px;
+    padding-right: 0px;}
+
+    .card {
+        width: 200px;
+        height: 270px;}
+    .card-content {
+        padding-left: 20px;
+        height: 60%;
+    }
+    .card-big-text {
+        font-size: 18px;}
+    
+    .card-bottom-container {
+        font-size: 14px;
+        padding-right: 20px;}
+
+    
+    /* Small sections/changes */
+    .confidentiality-notice {
+        font-size: 12px;
+        width: 400px;
+        padding: 20px;}
+    .quote-desc{
+        font-size: 12px;
     }
 }
 
@@ -807,6 +859,49 @@ font-size: 20px;
         .img-with-label-label{
             font-size: 18px;
         }
+       
+        /* UXR Overview */
+
+        .container-LR{
+            flex-direction: column;
+        }
+        .left, .right{
+            width: 100%;
+        }
+        .standard-text-heading {
+            max-width: 90vw;
+            font-size: 25px;}
+        .standard-text-subheading {
+            max-width: 80vw;
+            font-size: 18px;
+        }
+        .right{
+            padding-top: 30px;
+        }
+        #unity-logo {
+            height: 30px;}
+
+        #unity-background-heading {
+                font-size: 35px;}
+        
+        .card-container {
+            padding-left: 15px;
+        padding-right: 0px;}
+
+        .card {
+            width: 200px;
+            height: 270px;}
+        .card-content {
+            padding-left: 20px;
+            height: 60%;
+        }
+        .card-big-text {
+            font-size: 18px;}
+        
+        .card-bottom-container {
+            font-size: 14px;
+            padding-right: 20px;}
+
     }
 
 
@@ -852,3 +947,11 @@ font-size: 20px;
 @media only screen and (min-width: 1025px) {
 
 }
+
+
+/* TODO: Figure out business value image, it's been made just need to figure out how to make responsive
+assets/project_goal_diagram.png */
+
+/* TODO: MAKE CARDS INTO A CAROUSEL #card-bottom-container */
+
+/* TODO: UPDATE PERSONA */
