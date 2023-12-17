@@ -97,3 +97,37 @@ padding-top: 30px;
     /* align-self:center; */
     /* padding: 60px; */
 }
+
+/* --------------------- */
+/* RESPONSIVE WEB */
+
+/* Small: phones */
+@media only screen and (max-width: 481px) {
+    .userneed-img{
+        width: 100%;
+      }
+
+      .goal-list{
+        flex-direction: column;
+      }
+      .border-wrapper {
+        margin:10px;
+    }
+}
+
+
+/* Medium: tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+
+/* Large: laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* XL: desktops */
+@media only screen and (min-width: 1025px) {
+
+}
