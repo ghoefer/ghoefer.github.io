@@ -668,6 +668,43 @@ font-size: 20px;
         display: flex;
         flex-direction: column;
     }
+
+    /* main point */
+    .main-point-smallheading{
+        font-size: 14px;
+    }
+
+    .main-point{
+        font-size:25px;
+        width: 80vw;
+    }
+    .big-idea{
+        padding-top:0px;
+    }
+
+    /* user need */
+    .userneed-wrapper{
+        flex-direction:column;
+        padding-top: 0px;
+    }
+    .userneed-desc{
+        width:100%;
+        font-size:14px;
+        padding:20px;
+        margin-bottom: 50px;
+    }
+
+    /* the product */
+    .img-with-label-img {
+        height: 80px;
+    }
+    .LR-text {
+        font-size: 14px;
+        width: 90%;
+    }
+    .img-with-label-label{
+        font-size: 18px;
+    }
 }
 
 /* Medium: tablets */
@@ -733,7 +770,44 @@ font-size: 20px;
         display: flex;
         flex-direction: column;
     }
-}
+
+        /* main point */
+        .main-point-smallheading{
+            font-size: 14px;
+        }
+    
+        .main-point{
+            font-size:25px;
+            width: 80vw;
+        }
+        .big-idea{
+            padding-top:0px;
+        }
+    
+        /* user need */
+        .userneed-wrapper{
+            flex-direction:column;
+            padding-top: 0px;
+        }
+        .userneed-desc{
+            width:100%;
+            font-size:14px;
+            padding:20px;
+            margin-bottom: 50px;
+        }
+    
+        /* the product */
+        .img-with-label-img {
+            height: 80px;
+        }
+        .LR-text {
+            font-size: 14px;
+            width: 90%;
+        }
+        .img-with-label-label{
+            font-size: 18px;
+        }
+    }
 
 
 /* Large: laptops */
@@ -741,6 +815,36 @@ font-size: 20px;
     .summary-details{
         width: 100%;
     }
+
+        /* main point */
+    
+        .main-point{
+            font-size:40px;
+            /* width: 100vw; */
+        }
+        .big-idea{
+            padding-top:0px;
+        }
+
+        /* user need */
+        .userneed-desc{
+            width:100%;
+            font-size:20px;
+            padding:20px;
+            margin-bottom: 50px;
+        }
+
+          /* the product */
+          .img-with-label-img {
+            height: 120px;
+        }
+         .LR-text {
+            font-size: 18px;
+            /* width: 90%; */
+        }
+        .img-with-label-label{
+            font-size: 20px;
+        }
    
 }
 
