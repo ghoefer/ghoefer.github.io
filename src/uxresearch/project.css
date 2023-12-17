@@ -54,11 +54,13 @@ line-height: normal;
 /* LABELS */
 .top-labels{
     padding-top: 16px;
+    display:flex;
 
 }
 .padded-label {
     padding: 8px;
     border-radius: 6px;
+    margin:5px;
 }
 .label-container {
     margin: 10px;
@@ -123,7 +125,7 @@ overlay-bg{
     opacity: 95%;
     display: flex;
     flex-direction: column;
-    height: 110%;
+    height: 100%;
     padding: 10px;
     width: fit-content;
     border-radius: 10px;
@@ -311,6 +313,11 @@ padding-bottom: 50px;
 
 }
 
+#teamcharts-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
 
 
 .confidentiality-notice{
@@ -567,9 +574,10 @@ font-size: 20px;
 @media only screen and (max-width: 481px) {
     
     .padded-label {
-        padding: 10px;
-        border-radius: 6px;
-        font-size: 25px;
+        padding: 6px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 5px;
     }
 
     .bigprojectimg{
@@ -629,9 +637,38 @@ font-size: 20px;
     section{
         padding-bottom: 50px;
     }
-
+    .top-left{
+        width: 100%;
     }
 
+    #top-right{
+        width: 100%;
+    }
+    
+/* team */
+   /* team */
+    .team-chart{
+        width:100%;
+        align-self:center;
+        padding-bottom: 50px;
+    }
+    .team-chart-names, .team-chart-titles{
+        padding-left: 10px;
+        padding-right:10px;
+        align-self: center;
+        text-align: center;
+    }
+    .team-chart-teammate-title, .team-chart-teammate-name{
+        padding-top: 15px;
+    }
+    .team-chart-teamname{
+        padding-bottom: 0px;
+    }
+    #teamcharts-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 /* Medium: tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
@@ -640,7 +677,11 @@ font-size: 20px;
     }
 
     .numbered-summary-text{
-        font-size: 24px;
+        font-size: 14px;
+    }
+
+    .summary-detail-text-group{
+        font-size: 14px;
     }
 
     .summary-details{
@@ -652,6 +693,45 @@ font-size: 20px;
     .numbered-summary-item{
         padding: 15px;
         width: 150px;
+    }
+    .padded-label {
+        padding: 6px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin: 5px;
+    }
+    section{
+        padding-bottom: 50px;
+    }
+    .top-left{
+        width: 100%;
+    }
+
+    #top-right{
+        width: 100%;
+    }
+
+    /* team */
+    .team-chart{
+        width:100%;
+        align-self:center;
+        padding-bottom: 50px;
+    }
+    .team-chart-names, .team-chart-titles{
+        padding-left: 10px;
+        padding-right:10px;
+        align-self: center;
+        text-align: center;
+    }
+    .team-chart-teammate-title, .team-chart-teammate-name{
+        padding-top: 15px;
+    }
+    .team-chart-teamname{
+        padding-bottom: 0px;
+    }
+    #teamcharts-wrapper{
+        display: flex;
+        flex-direction: column;
     }
 }
 
