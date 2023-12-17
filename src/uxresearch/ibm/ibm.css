@@ -105,3 +105,33 @@ padding-left: 25px;
 .userneed-img{
     width: 90%;
 }
+
+
+
+
+
+/* --------------------- */
+/* RESPONSIVE WEB */
+
+/* Small: phones */
+@media only screen and (max-width: 481px) {
+
+
+}
+
+
+/* Medium: tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  
+}
+
+
+/* Large: laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+/* XL: desktops */
+@media only screen and (min-width: 1025px) {
+
+}

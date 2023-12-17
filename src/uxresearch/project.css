@@ -118,6 +118,16 @@ line-height: normal;
 }
 
 
+overlay-bg{
+    background-color: black;
+    opacity: 95%;
+    display: flex;
+    flex-direction: column;
+    height: 110%;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+}
 
 
 
@@ -393,7 +403,7 @@ card-group{
     width: 100%;
     padding-top:20px;
     justify-content: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 
@@ -459,7 +469,7 @@ card-group{
   }
 
   .numbered-summary-item{
-    justify-content: center;
+    /* justify-content: center; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -546,4 +556,115 @@ font-size: 20px;
 .border-title{
     font-weight: 700;
     padding-bottom: 20px;
+}
+
+
+
+/* --------------------- */
+/* RESPONSIVE WEB */
+
+/* Small: phones */
+@media only screen and (max-width: 481px) {
+    
+    .padded-label {
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 25px;
+    }
+
+    .bigprojectimg{
+        height: 50vh;
+    }
+
+    .numbered-summary{
+        flex-direction: column;
+        width: 100%;
+    }
+    .numbered-summary-text{
+        align-items: flex-start;
+        text-align: left;
+        padding-left: 10px;
+        width: 100%;
+        padding-top: 0px;
+        font-size: 16px;
+    }
+    .summary-details{
+        width: 100%;
+        padding-right: 40px;
+    }
+    #summary-line {
+        width: 90%;
+        margin: 30px;
+    }
+    .numbered-summary-item{
+        padding: 15px;
+        width: 100%;
+        flex-direction: row;
+    }
+    .circle{
+        width: 30px;
+        height: 30px;
+        padding: 00px;  
+    }
+    
+    .summary-details{
+        flex-direction: column;
+    }
+
+    .summary-detail-text-group{
+        font-size: 16px;
+    }
+
+    .project-section-heading{
+        padding-bottom: 50px;
+    }
+    .heading-text{
+        font-size: 14px;
+    }
+    .heading-rect{
+        width: 20px;
+        height: 2px;
+    }
+
+    section{
+        padding-bottom: 50px;
+    }
+
+    }
+
+
+/* Medium: tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .bigprojectimg{
+        height: 50vh;
+    }
+
+    .numbered-summary-text{
+        font-size: 24px;
+    }
+
+    .summary-details{
+        width: 100%;
+    }
+    #summary-line {
+        width: 90%;
+    }
+    .numbered-summary-item{
+        padding: 15px;
+        width: 150px;
+    }
+}
+
+
+/* Large: laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .summary-details{
+        width: 100%;
+    }
+   
+}
+
+/* XL: desktops */
+@media only screen and (min-width: 1025px) {
+
 }
