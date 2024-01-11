@@ -43,3 +43,47 @@ top{
 .pub-authors{
     font-size: 14px;
 }
+
+/* --------------------- */
+/* RESPONSIVE WEB */
+
+/* Small: phones */
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    #description {
+        font-size: 18px;
+        width: 80vw;
+    }
+    .pubs-list ul {
+        width: 80vw;
+        margin-left: 0px;
+    }
+}
+
+
+/* Medium: tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #description {
+        font-size: 18px;
+        width: 60vw;
+        
+}
+    .pubs-list ul {
+        width: 80vw;
+        margin-left: 10px;
+    }
+}
+
+
+/* Large: laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .pubs-list ul {
+        width: 70vw;
+        margin-left: 10px;
+    }
+}
+
+/* XL: desktops */
+@media only screen and (min-width: 1025px) {
+ 
+    
+}
