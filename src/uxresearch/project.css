@@ -340,7 +340,7 @@ padding-bottom: 50px;
     padding-top: 80px;
     padding-left: 30px;
     padding-right: 30px;
-    height: 450px;
+    /* height: 450px; */
     
 }
 * {
@@ -361,6 +361,7 @@ padding-bottom: 50px;
     align-items: center;
     cursor: pointer;
     transition: transform 0.2s;
+    margin-bottom: 25px;
 }
 
 .card:hover {
@@ -411,7 +412,8 @@ card-group{
     width: 100%;
     padding-top:20px;
     justify-content: center;
-    overflow: hidden;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 
@@ -775,6 +777,13 @@ font-size: 20px;
     }
     .border-title, .border-desc {
         font-size: 16px;}
+
+    card-group{
+        /* white-space: nowrap; */
+        /* position: relative; */
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
+    }
 }
 
 /* Medium: tablets */
@@ -910,9 +919,10 @@ font-size: 20px;
         .card {
             width: 200px;
             height: 270px;}
+        
         .card-content {
             padding-left: 20px;
-            height: 60%;
+            height: 63%;
         }
         .card-big-text {
             font-size: 18px;}
@@ -921,6 +931,12 @@ font-size: 20px;
             font-size: 14px;
             padding-right: 20px;}
 
+        card-group{
+            /* white-space: nowrap; */
+            /* position: relative; */
+            -webkit-overflow-scrolling: touch;
+            justify-content: flex-start;
+        }
     }
 
 
