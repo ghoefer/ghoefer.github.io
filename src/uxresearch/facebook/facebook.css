@@ -27,7 +27,7 @@ padding-top: 30px;
 
 #design-idea{
     display:flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -48,7 +48,7 @@ padding-top: 30px;
 }
 
 #specsheet{
-    height: 500px;
+    max-height: 40vh;
     display:flex;
     justify-content: center;
     align-self: center;
@@ -77,8 +77,8 @@ padding-top: 30px;
 
   .goal-detail-text-heading{
     font-weight: 700;
-    padding-bottom: 10px;
-    height: 60px;
+    /* padding-bottom: 10px; */
+    /* height: 60px; */
     width: 70%;
     color:black;
   }
@@ -102,7 +102,7 @@ padding-top: 30px;
 /* RESPONSIVE WEB */
 
 /* Small: phones */
-@media only screen and (max-width: 481px) {
+@media only screen and (min-width: 0px) and (max-width: 480px) {
     .userneed-img{
         width: 100%;
       }
@@ -113,21 +113,58 @@ padding-top: 30px;
       .border-wrapper {
         margin:10px;
     }
+    .right-img{
+        /* padding: 10px; */
+        padding-right: 0px;
+    }
+    .padtop60 {
+        padding-top: 0px;
+      }
+      #design-idea {
+        flex-direction: column;
+    }
+    #three-goals{
+        flex-direction: column;
+    }
 }
 
 
 /* Medium: tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
-  
+    .right-img{
+        /* padding: 10px; */
+        padding-right:0px;
+    }
+    .padtop60 {
+        padding-top: 0px;
+      }
+    
+    #design-idea {
+        flex-direction: column;
+    }
+    #three-goals{
+        flex-direction: column;
+    }
 }
 
 
 /* Large: laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
+.padtop60 {
+        padding-top: 60px;
+      }
+      #design-idea {
+        flex-direction: row;
+    }
 }
 
 /* XL: desktops */
 @media only screen and (min-width: 1025px) {
-
+    .padtop60 {
+        padding-top: 60px;
+      }
+      #design-idea {
+        flex-direction: row;
+    }
+    
 }
