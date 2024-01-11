@@ -340,6 +340,7 @@ padding-bottom: 50px;
     padding-top: 80px;
     padding-left: 30px;
     padding-right: 30px;
+    scroll-snap-align: start;
     /* height: 450px; */
     
 }
@@ -414,6 +415,7 @@ card-group{
     justify-content: center;
     overflow-x: scroll;
     overflow-y: hidden;
+    scroll-snap-type: x mandatory;
 }
 
 
@@ -783,6 +785,10 @@ font-size: 20px;
         /* position: relative; */
         -webkit-overflow-scrolling: touch;
         justify-content: flex-start;
+        scroll-snap-type: x mandatory;
+    }
+    .card-big-text{
+        padding-top: 5px;
     }
 }
 
@@ -914,7 +920,8 @@ font-size: 20px;
         
         .card-container {
             padding-left: 15px;
-        padding-right: 0px;}
+        padding-right: 0px;
+        scroll-snap-align: start;}
 
         .card {
             width: 200px;
@@ -936,6 +943,10 @@ font-size: 20px;
             /* position: relative; */
             -webkit-overflow-scrolling: touch;
             justify-content: flex-start;
+            scroll-snap-type: x mandatory;
+        }
+        .card-big-text{
+            padding-top: 5px;
         }
     }
 
