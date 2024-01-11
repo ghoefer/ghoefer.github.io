@@ -5,7 +5,7 @@ about-top-container{
     /* height: 70vh; */
     overflow: hidden;
     padding: 30px;
-    margin: 10vh;
+    /* margin: 10vh; */
     background-color: #E8E8EA;
     color: black;
     border-radius: 20px;
@@ -47,6 +47,96 @@ align-items: flex-start;
     align-items: center;
     width: 50%;
     overflow: hidden;
+    
+}
+
+#about-location{
+    align-self: flex-start;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+/* --------------------- */
+/* RESPONSIVE WEB */
+
+/* Small: phones */
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    about-top-container {
+        flex-direction: column;
+    }
+    #about-description-text {
+        padding-left: 0px;
+        font-size: 14px;
+        line-height: 20px;
+        width: auto;
+        align-items: center;
+    }
+    #about-description-text p {
+        margin: 0px;
+        
+    }
+    about-top-container{
+        margin: 3vh;
+        padding: 5%;
+    }
+    #about-location{
+        align-self: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #about-image-container{
+        align-self: center;
+        width: 80vw;
+    }
+    
+}
+
+
+/* Medium: tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    about-top-container {
+        flex-direction: column;
+    }
+    #about-description-text {
+        padding-left: 0px;
+        font-size: 14px;
+        line-height: 20px;
+        width: auto;
+        align-items: center;
+    }
+    #about-description-text p {
+        margin: 0px;
+        
+    }
+    about-top-container{
+        margin: 3vh;
+        
+    }
+    #about-location{
+        align-self: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #about-image-container{
+        align-self: center;
+        width: 60vw;
+    }
+}
+
+
+/* Large: laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    about-top-container{
+        margin: 7vh;  
+    }
+}
+
+/* XL: desktops */
+@media only screen and (min-width: 1025px) {
+    about-top-container{
+        margin: 10vh;  
+    }
     
 }
 
