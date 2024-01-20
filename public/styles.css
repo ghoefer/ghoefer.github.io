@@ -133,6 +133,56 @@ menu a:hover{
     align-self: center;
 }
 
+.text-side{
+    width: 100%;
+}
+news-container{
+    width: 100%;
+    justify-content: flex-start;
+    display: flex;
+    /* margin-left: 30px; */
+}
+.news-rect{
+    margin-top: 30px;
+    align-self: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    /* height: 76px; */
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: rgba(0, 74, 185, 0.30);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    justify-content: space-between;
+}
+.news-container-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 85%;
+    padding-left: 3%;
+    
+}
+
+.news-label{
+    font-weight:600;
+    /* font-size: 16px; */
+    font-style: italic;
+}
+.news-desc{
+    /* font-size: 18px; */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.news-container-arrow{
+    width: 5%;
+    padding-right: 3%;
+    /* display: flex; */
+    align-self:center;
+}
+
 
 /* landing page */
 
@@ -142,7 +192,7 @@ top-container{
     justify-content: flex-start;
     overflow: hidden;
     padding-top: 5vh;
-    align-items: center;
+    align-items: flex-start;
 }
 
 #landing-description-text {
@@ -153,9 +203,10 @@ text-align: left;
 display:flex;
 justify-content: center;
 height: 100%;
-
-
 }
+
+
+
 
 #landing-description-text p {
     margin:10px;
@@ -550,6 +601,13 @@ project-card-text{
 
 /* Small: phones */
 @media only screen and (max-width: 481px) {
+    #bigname,#landing-description-text p, news-container{
+        margin-left: 20px;
+    }  
+    #arrow{
+        width: 20px;
+    }
+
     #bigname{
         font-size: 60px;
         text-align: start;
@@ -558,10 +616,17 @@ project-card-text{
     #landing-description-text p{
         font-size: 14px;
         line-height: 16px;
-        padding-left: 30px;
+        /* padding-left: 30px; */
     }
     #landing-description-text{
-        width: 90%;
+        width: 90vw;
+    }
+
+    .news-label{
+        font-size: 12px;
+    }
+    .news-desc{
+        font-size: 12px;
     }
 
     top-container{
@@ -601,6 +666,12 @@ project-card-text{
 
 /* Medium: tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    #bigname,#landing-description-text p, news-container{
+        margin-left: 30px;
+    }
+    #arrow{
+        width: 30px;
+    }
     #bigname{
         font-size: 80px;
     }
@@ -608,17 +679,23 @@ project-card-text{
     #landing-description-text p{
         font-size: 16px;
         line-height: 20px;
-        padding-left: 30px;
+        /* padding-left: 30px; */
     }
 
     #landing-description-text{
-        width: 80%;
+        width: 80vw;
     }
 
     top-container{
         flex-direction: column;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .news-label{
+        font-size: 13px;
+    }
+    .news-desc{
+        font-size: 13px;
     }
     .project-cards{
         flex-direction: column;
@@ -676,18 +753,29 @@ project-card-text{
 
 /* Large: laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #bigname,#landing-description-text p, news-container{
+        margin-left: 30px;
+    }
+
     #bigname{
         font-size: 90px;
-        padding-left: 30px;
+        /* padding-left: 30px; */
 
     }
+   
     #landing-description-text p{
         font-size: 20px;
         line-height: 25px;
         padding-left: 30px;
     }
     #landing-description-text{
-        width: 60%;
+        width: 60vw;
+    }
+    .news-label{
+        font-size: 18px;
+    }
+    .news-desc{
+        font-size: 16px;
     }
     top-container{
         flex-direction: row;
@@ -708,9 +796,13 @@ project-card-text{
 
 /* XL: desktops */
 @media only screen and (min-width: 1025px) {
+    #bigname,#landing-description-text p, news-container{
+        margin-left: 30px;
+    }
+
     #bigname{
         font-size: 120px;
-        padding-left: 30px;
+        /* padding-left: 30px; */
 
     }
     #landing-description-text p{
@@ -719,12 +811,18 @@ project-card-text{
         padding-left: 30px;
     }
     #landing-description-text{
-        width: 50%;
+        width: 50vw;
     }
     top-container{
         flex-direction: row;
         padding-left: 10px;
         padding-right: 10px;
+    }
+    .news-label{
+        font-size: 18px;
+    }
+    .news-desc{
+        font-size: 16px;
     }
     .project-cards{
         flex-direction: row;
