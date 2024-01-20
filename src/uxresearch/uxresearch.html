@@ -15,14 +15,33 @@
 
 <!--Navigation bar-->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="../../public/js/nav.js"></script>
-<div id="nav-placeholder" class="autohide navbar"></div>
+<script src="../../../public/js/nav.js"></script>
+<div id="nav-placeholder"></div>
 <script>
-    $.get("../../public/components/nav.html", function(data){
-        $("#nav-placeholder").append(data);
-        $.getScript("../../../public/js/nav.js",function(){
-        navfunction();});
-    });   
+    $(document).ready(function() {
+        $.get("../../../public/components/nav.html", function(data){
+            $("#nav-placeholder").append(data);
+            $.getScript("../../../public/js/nav.js",function(){
+            navfunction();});
+            });   
+    });
+
+    function responsiveBar() {
+        var menu = document.querySelector('menu'); // Select the menu items
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+        var icon=document.getElementsByClassName("fa fa-bars")[0];
+        if(icon){
+        icon.className = icon.className.replace("fa fa-bars", "fa fa-close");
+        }
+        else{
+        icon=document.getElementsByClassName("fa fa-close")[0];
+        icon.className = icon.className.replace("fa fa-close", "fa fa-bars");
+        }
+    }
 </script>
 <!--end of Navigation bar-->
 
