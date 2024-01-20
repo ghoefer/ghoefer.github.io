@@ -98,6 +98,8 @@ menu a:hover{
     color: #E8EAEE;
 }
 
+
+
     /* Navbar auto hide/show feature is bootstrapped
     Find it here https://bootstrap-menu.com/detail-autohide.html */
     .scrolled-down{
@@ -140,6 +142,7 @@ news-container{
     width: 100%;
     justify-content: flex-start;
     display: flex;
+    cursor: pointer;
     /* margin-left: 30px; */
 }
 .news-rect{
@@ -156,6 +159,10 @@ news-container{
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     padding: 15px;
     justify-content: space-between;
+}
+.news-rect:hover{
+    /* background: rgba(0, 74, 185, 0.6); */
+    background: #2D2F3A;
 }
 .news-container-text{
     display: flex;
