@@ -663,8 +663,27 @@ project-card-text{
     color:white; }
 
       /* TOP NAVBAR */
-      menu {
+    menu {
         display: none;
+        flex-direction: column;
+        padding: 10px;
+        height: 95vh;
+        background-color: #2D2F3A;
+        width: 100vw;
+        position: absolute;
+        top: 40px;
+        left:0px;
+        align-items: start;
+        justify-content: flex-start;
+    }
+
+    menu a{
+        padding-left: 20px;
+        padding-top: 10px;
+        font-size: 18px;
+    }
+    .nav-icon {
+        display: flex; /* Displayed on small screens */
     }
     .nav-icon {
         display: flex; /* Displayed on small screens */
