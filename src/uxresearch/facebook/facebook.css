@@ -107,7 +107,8 @@ padding-top: 30px;
  
 .thumbnail { 
     width: 100%; 
-    cursor: pointer; 
+    max-width: 30vw;
+    cursor: pointer;
 } 
  
 .play-button { 
@@ -145,6 +146,7 @@ padding-top: 30px;
     }
     .padtop60 {
         padding-top: 0px;
+        padding-bottom: 30px;
       }
       #design-idea {
         flex-direction: column;
@@ -163,6 +165,7 @@ padding-top: 30px;
     }
     .padtop60 {
         padding-top: 0px;
+        padding-bottom: 30px;
       }
     
     #design-idea {
@@ -178,6 +181,7 @@ padding-top: 30px;
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
 .padtop60 {
         padding-top: 60px;
+        padding-bottom: 60px;
       }
       #design-idea {
         flex-direction: row;
@@ -188,6 +192,7 @@ padding-top: 30px;
 @media only screen and (min-width: 1025px) {
     .padtop60 {
         padding-top: 60px;
+        padding-bottom: 60px;
       }
       #design-idea {
         flex-direction: row;
