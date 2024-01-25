@@ -43,7 +43,7 @@
 
 #timeline-diagram{
     width: 100%;
-    padding-right: 30px;
+    /* padding-right: 30px; */
 }
 
 #unity-background-heading{
@@ -128,7 +128,20 @@ padding-left: 25px;
         font-size: 12px;
         padding-left: 20px;
         width: 60vw;
+        padding-top:20px;
     }
+    #timeline-diagram{
+        padding: 20px;
+    }
+    #goal-diagram{
+        content: url('assets/resp_project_goal_diagram.png');
+    }
+    #goal-quote{
+        align-self: center;
+        padding-top: 10px;
+        padding-left: 0px;
+    }
+
 
 
 }
@@ -136,16 +149,34 @@ padding-left: 25px;
 
 /* Medium: tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    #timeline-diagram{
+        padding: 20px;
+    }
+    #goal-diagram{
+        content: url('assets/resp_project_goal_diagram.png');
+        height: 30vh;
+        width: auto;
+    }
+    #goal-quote{
+        align-self: center;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
 
 }
 
 
 /* Large: laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-
+    #timeline-diagram{
+        padding: 30px;
+    }
 }
 
 /* XL: desktops */
 @media only screen and (min-width: 1025px) {
+    #timeline-diagram{
+        padding: 30px;
+    }
 
 }

@@ -14,7 +14,7 @@ function navfunction() {
 //   console.log("is this working");
   // add padding-top to body (if necessary)
       navbar_height = document.querySelector('.navbar').offsetHeight;
-      // document.body.style.paddingTop = navbar_height + 'px';
+      // document.body.style.paddingTop = navbar_height + 'px'; commented as it moves everything down weirdly
 
   if(el_autohide){
   var last_scroll_top = 0;
