@@ -15,8 +15,8 @@ function navfunction() {
   // add padding-top to body (if necessary)
       navbar_height = document.querySelector('.navbar').offsetHeight;
       // document.body.style.paddingTop = navbar_height + 'px'; commented as it moves everything down weirdly
-
-  if(el_autohide){
+  
+  if(currentScrollPos > 0){
   var last_scroll_top = 0;
   window.addEventListener('scroll', function() {
           let scroll_top = window.scrollY;
@@ -31,6 +31,10 @@ function navfunction() {
           last_scroll_top = scroll_top;
   }); 
   // window.addEventListener
+  } else {
+    // User is at the top of the page, always show the navbar
+    navbar.classList.remove('scrolled-up');
+    navbar.classList.remove('scrolled-down');
   }
   // if
 }; 
