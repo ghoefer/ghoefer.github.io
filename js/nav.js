@@ -1,41 +1,26 @@
-// This script:
-// 1. Hides the navbar when scrolling down 
-// 2. Shows the navbar when scrolling up
-// 3. Adds padding to the body to prevent the navbar from overlapping the content
+document.addEventListener("DOMContentLoaded", function() {
+  var prevScrollpos = window.pageYOffset;
+  var navbar = document.querySelector('.autohide');
 
-function navfunction() {
-  /* Navbar auto hide/show feature is bootstrapped
-  Find it here https://bootstrap-menu.com/detail-autohide.html */
+  window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
 
-
-  el_autohide = document.querySelector('.autohide');
-  el_autohide.style.position = "fixed";
-
-//   console.log("is this working");
-  // add padding-top to body (if necessary)
-      navbar_height = document.querySelector('.navbar').offsetHeight;
-      // document.body.style.paddingTop = navbar_height + 'px'; commented as it moves everything down weirdly
-  
-  if(currentScrollPos > 0){
-  var last_scroll_top = 0;
-  window.addEventListener('scroll', function() {
-          let scroll_top = window.scrollY;
-      if(scroll_top < last_scroll_top) {
-              el_autohide.classList.remove('scrolled-down');
-              el_autohide.classList.add('scrolled-up');
+      // Check if the user is not at the top of the page
+      if (currentScrollPos > 0) {
+          // Determine scroll direction
+          if (prevScrollpos > currentScrollPos) {
+              navbar.classList.remove('scrolled-down');
+              navbar.classList.add('scrolled-up');
+          } else {
+              navbar.classList.remove('scrolled-up');
+              navbar.classList.add('scrolled-down');
           }
-          else {
-              el_autohide.classList.remove('scrolled-up');
-              el_autohide.classList.add('scrolled-down');
-          }
-          last_scroll_top = scroll_top;
-  }); 
-  // window.addEventListener
-  } else {
-    // User is at the top of the page, always show the navbar
-    navbar.classList.remove('scrolled-up');
-    navbar.classList.remove('scrolled-down');
-  }
-  // if
-}; 
-// DOMContentLoaded  end hi
+      } else {
+          // User is at the top of the page, always show the navbar
+          navbar.classList.remove('scrolled-up');
+          navbar.classList.remove('scrolled-down');
+      }
+
+      prevScrollpos = currentScrollPos;
+  };
+});
