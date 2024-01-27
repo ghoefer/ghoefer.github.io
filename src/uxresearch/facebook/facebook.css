@@ -90,6 +90,11 @@ padding-top: 30px;
     display:flex;
 }
 
+.center-img-containers{
+    display: flex;
+    justify-content: center;
+    }
+
 #big-quest{
     width: 100%;
     height: 300px;

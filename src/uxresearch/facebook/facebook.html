@@ -13,6 +13,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="facebook.js"></script>
 
+    <!-- Add the Lightbox2 CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- Add jQuery (required by Lightbox2) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Add the Lightbox2 JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
 </head>
 
 <body>
@@ -187,7 +195,10 @@
             </div>
         </div>
         <div class="right">
-            <img class="right-img" src="assets/audit-1.png" alt="Comparing how new releases are surfaced across each platform that the store has: VR, mobile and web.">
+            <a href="assets/audit-1.png" data-lightbox="image-1" data-title="Image 1">
+                <img class="right-img" src="assets/audit-1.png" alt="Comparing how new releases are surfaced across each platform that the store has: VR, mobile and web.">
+            </a>
+            
         </div>
     </div>
 
@@ -200,7 +211,9 @@
             </div>
         </div>
         <div class="right">
+            <a href="assets/audit-2.png" data-lightbox="image-1" data-title="Image 1">
             <img class="right-img" src="assets/audit-2.png" alt="Audit of how users navigate to new releases and identified challenges they face.">
+            </a>
         </div>
     </div>
 
@@ -270,7 +283,9 @@
              </div>
         </div>
         <div class="right">
+            <a href="assets/businessval_large.png" data-lightbox="image-1" data-title="Business value diagram">
             <img id="businessval-diagram" src="assets/businessval_chart.svg" alt="Timeline of Unity's development.">
+             </a>
         </div>
 
 </section>
@@ -340,8 +355,9 @@
                 </div>      
             </div>
             <div class="row">
-                <img id="specsheet" src="assets/specsheet.png" alt="Spec sheet for the design I proposed across VR, mobile and web" class="userneed-img">
-                <img id="specsheet" src="assets/specsheet.png" alt="Spec sheet for the design I proposed across VR, mobile and web" class="userneed-img">
+                <a href="assets/specsheet.png" data-lightbox="image-1" data-title="Specsheet">
+                    <img id="businessval-diagram" src="assets/specsheet.png" alt="Spec sheet for the design I proposed across VR, mobile and web">
+                </a>
             </div>
     </div>
 </section>
@@ -364,7 +380,9 @@
         </div>
         <div class="right">
             <div class="row">
-                <img class="standard-right-side-image" src="assets/whiteboard.png" alt="White board where I built out the user study that was conducted.">
+                <a href="assets/whiteboard.png" data-lightbox="image-1" data-title="Brainstorm & ideation">
+                    <img class="standard-right-side-image" src="assets/whiteboard.png" alt="White board where I built out the user study that was conducted.">
+                </a>
             </div>
         </div>
     </div>
@@ -372,15 +390,22 @@
     <div id="three-goals">
         <div class="goal-detail-text-group">
             <div class="goal-detail-text-heading">Goal #1: Badging placement and iconography usage</div>
+            <a class="center-img-containers" href="assets/uxr_goal1.png" data-lightbox="image-1" data-title="Badging variations">
             <img class="goal-img" src="assets/uxr_goal1.png" alt="Diagram of the 4 different variations for badges: next to the text or on top of image, then an icon or a text badge.">
+            </a>
+            
         </div>
         <div class="goal-detail-text-group">
             <div class="goal-detail-text-heading">Goal #2: Modifying the new releases layout</div>
+            <a class="center-img-containers" href="assets/uxr_goal2.png" data-lightbox="image-1" data-title="Layouts for user research">
             <img class="goal-img" src="assets/uxr_goal2.png" alt="Two different new release layouts that we tested on iPhone screens.">
+                </a>
         </div>
         <div class="goal-detail-text-group">
             <div class="goal-detail-text-heading">Goal #3: Taxonomy and discoverability of Bundle badge</div>
-            <img class="goal-img" src="assets/uxr_goal3.png" alt="Two different screens showing a different design of where the user could access a bundle.">
+            <a class="center-img-containers" href="assets/uxr_goal3.png" data-lightbox="image-1" data-title="Badges in the existing system">
+                <img class="goal-img" src="assets/uxr_goal3.png" alt="Exploring how the new badging system would fit in with the bundle badges.">
+                    </a>
         </div>
         
     </div>
@@ -388,8 +413,6 @@
 </section>
 
 <!-- UXR -->
-<!-- TODO: INSERT GIFS AND VIDEOS -->
-<!-- do a matching check of all text against figma text -->
 <section  class="black-bg">
     <div class="project-section-heading">
         <div class="heading-rect white-bg"></div>
