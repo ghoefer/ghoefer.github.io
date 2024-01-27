@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <title>AI & Code</title>
     <link href="ai-styles.css" rel="stylesheet">
-    <link href="../../public/styles.css" rel="stylesheet">
+    <link href="../../styles.css" rel="stylesheet">
     <!-- Add icon library -- w3 schools -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -16,13 +16,13 @@
 
 <!--Navigation bar-->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="../../public/js/nav.js"></script>
+<script src="../../js/nav.js"></script>
 <div id="nav-placeholder"></div>
 <script>
     $(document).ready(function() {
-        $.get("../../public/components/nav.html", function(data){
+        $.get("../../components/nav.html", function(data){
             $("#nav-placeholder").append(data);
-            $.getScript("../../public/js/nav.js",function(){
+            $.getScript("../../js/nav.js",function(){
             navfunction();});
             });   
     });
@@ -83,7 +83,7 @@
 <!-- FOOTER -->
 <footer id="footer-placeholder"></footer>
 <script>
-    $.get("../../public/components/footer.html", function(data){
+    $.get("../../components/footer.html", function(data){
         $("#footer-placeholder").replaceWith(data);
     });   
 </script>
