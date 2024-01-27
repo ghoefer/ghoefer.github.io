@@ -138,6 +138,7 @@ keyword p, keyword line {
     }
     .container-of-keywords {
         font-size: 12px;
+        visibility: hidden; /* hide for smaller devices */
     }
 
     .project-container {
