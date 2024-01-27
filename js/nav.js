@@ -3,35 +3,37 @@
 // 2. Shows the navbar when scrolling up
 // 3. Adds padding to the body to prevent the navbar from overlapping the content
 
-function navfunction() {
-  /* Navbar auto hide/show feature is bootstrapped
-  Find it here https://bootstrap-menu.com/detail-autohide.html */
+document.addEventListener("DOMContentLoaded", function() {
+  var navbar = document.getElementById("navbar");
+  var prevScrollpos = window.pageYOffset;
 
+  window.onscroll = function() {
+      var currentScrollPos = window.pageYOffset;
+      if (currentScrollPos == 0) {
+          navbar.style.top = "0";
+      } else {
+          if (prevScrollpos > currentScrollPos) {
+              navbar.style.top = "0";
+          } else {
+              navbar.style.top = "-50px";
+          }
+      }
+      prevScrollpos = currentScrollPos;
 
-  el_autohide = document.querySelector('.autohide');
-  el_autohide.style.position = "fixed";
-
-//   console.log("is this working");
-  // add padding-top to body (if necessary)
-      navbar_height = document.querySelector('.navbar').offsetHeight;
-      // document.body.style.paddingTop = navbar_height + 'px'; commented as it moves everything down weirdly
-
-  if(el_autohide){
-  var last_scroll_top = 0;
-  window.addEventListener('scroll', function() {
-          let scroll_top = window.scrollY;
-      if(scroll_top < last_scroll_top) {
+      // Your existing code for auto hide/show navbar
+      var el_autohide = document.querySelector('.autohide');
+      if (el_autohide) {
+          var last_scroll_top = 0;
+          if (currentScrollPos < last_scroll_top) {
               el_autohide.classList.remove('scrolled-down');
               el_autohide.classList.add('scrolled-up');
-          }
-          else {
+          } else {
               el_autohide.classList.remove('scrolled-up');
               el_autohide.classList.add('scrolled-down');
           }
-          last_scroll_top = scroll_top;
-  }); 
-  // window.addEventListener
-  }
-  // if
-}; 
+          last_scroll_top = currentScrollPos;
+      }
+  };
+});
+
 // DOMContentLoaded  end hi
