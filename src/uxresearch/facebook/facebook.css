@@ -114,7 +114,7 @@ padding-top: 30px;
 } 
 #thumbnail-badge{
     /* width: 297px;  */
-    height: 400px; 
+    max-height: 400px; 
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     cursor: pointer;
     opacity: 60%;
@@ -185,6 +185,9 @@ padding-top: 30px;
     #three-goals{
         flex-direction: column;
     }
+    #thumbnail-badge{
+        height: 300px;
+    }
 }
 
 
@@ -196,6 +199,9 @@ padding-top: 30px;
       }
       #design-idea {
         flex-direction: row;
+    }
+    #thumbnail-badge{
+        height: 350px;
     }
 }
 
