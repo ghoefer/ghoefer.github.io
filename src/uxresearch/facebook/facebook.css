@@ -112,6 +112,13 @@ padding-top: 30px;
     object-fit: cover; /* Maintain aspect ratio and cover the container */
     cursor: pointer;
 } 
+#thumbnail-badge{
+    /* width: 297px;  */
+    height: 400px; 
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    cursor: pointer;
+    opacity: 60%;
+}
 
 .play-button { 
     position: absolute; 
