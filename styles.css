@@ -92,7 +92,7 @@ menu a:hover{
 #name-button{
     width: 80vw;
     align-self: center;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     color: white;
     padding-left: 15px;
@@ -689,7 +689,7 @@ project-card-text{
     menu a{
         padding-left: 20px;
         padding-top: 10px;
-        font-size: 18px;
+        font-size: 24px;
     }
     .nav-icon {
         display: flex; /* Displayed on small screens */
@@ -779,7 +779,7 @@ project-card-text{
     menu a{
         padding-left: 20px;
         padding-top: 10px;
-        font-size: 18px;
+        font-size: 24px;
     }
     .nav-icon {
         display: flex; /* Displayed on small screens */
