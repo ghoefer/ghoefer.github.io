@@ -506,6 +506,11 @@ blue-text{
     color: white;
 }
 
+.top-links{
+    color: #0073FF;
+    font-weight: 700;
+}
+
 a:hover{
     opacity: 60%;
 }
