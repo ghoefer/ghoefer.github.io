@@ -128,3 +128,55 @@ keyword p, keyword line {
     background-position: center;
 }
 
+/* --------------------- */
+/* RESPONSIVE WEB */
+
+/* Small: phones */
+@media only screen and (max-width: 481px) {
+    .project-description{
+        font-size: 12px;
+    }
+    .container-of-keywords {
+        font-size: 12px;
+    }
+
+    .project-container {
+    height: 20vh;
+    }
+    .project-right{
+        padding-left: 20px;
+        width: 70%;
+    }
+    .project-left {
+        width: 30%; }
+}
+
+/* Medium: tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .project-description{
+        font-size: 12px;
+    }
+    .project-container {
+        height: 20vh;
+        }
+    .container-of-keywords {
+        font-size: 12px;
+    }
+    .project-right{
+        padding-left: 20px;
+        width: 70%;
+    }
+    .project-left {
+    width: 30%; }
+}
+
+
+/* Large: laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+
+/* XL: desktops */
+@media only screen and (min-width: 1025px) {
+}
+
+
