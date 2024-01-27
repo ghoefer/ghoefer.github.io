@@ -5,35 +5,40 @@
 
 document.addEventListener("DOMContentLoaded", function() {
   var navbar = document.getElementById("navbar");
-  var prevScrollpos = window.pageYOffset;
+  
+    if (navbar) { // Check if navbar element exists
+        var prevScrollpos = window.pageYOffset;
+          
 
-  window.onscroll = function() {
-      var currentScrollPos = window.pageYOffset;
-      if (currentScrollPos == 0) {
-          navbar.style.top = "0";
-      } else {
-          if (prevScrollpos > currentScrollPos) {
+      window.onscroll = function() {
+          var currentScrollPos = window.pageYOffset;
+          if (currentScrollPos == 0) {
               navbar.style.top = "0";
           } else {
-              navbar.style.top = "-50px";
+              if (prevScrollpos > currentScrollPos) {
+                  navbar.style.top = "0";
+              } else {
+                  navbar.style.top = "-50px";
+              }
           }
-      }
-      prevScrollpos = currentScrollPos;
+          prevScrollpos = currentScrollPos;
 
-      // Your existing code for auto hide/show navbar
-      var el_autohide = document.querySelector('.autohide');
-      if (el_autohide) {
-          var last_scroll_top = 0;
-          if (currentScrollPos < last_scroll_top) {
-              el_autohide.classList.remove('scrolled-down');
-              el_autohide.classList.add('scrolled-up');
-          } else {
-              el_autohide.classList.remove('scrolled-up');
-              el_autohide.classList.add('scrolled-down');
+          var el_autohide = document.querySelector('.autohide');
+          if (el_autohide) {
+              var last_scroll_top = 0;
+              if (currentScrollPos < last_scroll_top) {
+                  el_autohide.classList.remove('scrolled-down');
+                  el_autohide.classList.add('scrolled-up');
+              } else {
+                  el_autohide.classList.remove('scrolled-up');
+                  el_autohide.classList.add('scrolled-down');
+              }
+              last_scroll_top = currentScrollPos;
           }
-          last_scroll_top = currentScrollPos;
-      }
-  };
+      };
+    } else {
+      console.error("Navbar element not found.");
+  }
 });
 
 // DOMContentLoaded  end hi
