@@ -621,7 +621,8 @@ project-card-text{
 /* Small: phones */
 @media only screen and (max-width: 481px) {
     .home-img{
-        height: 80vh;}
+        min-height: 100vh;
+        height: 100%; }
 
     #bigname,#landing-description-text p, news-container{
         margin-left: 20px;
@@ -750,7 +751,8 @@ project-card-text{
         height: 30vh;
     }
     .home-img{
-        height: 20vh;}
+        min-height: 80vh;
+        height: 80%; }
 
     
     /* FOOTER */
@@ -799,7 +801,8 @@ project-card-text{
 /* Large: laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .home-img{
-        height: 20vh;}
+        min-height: 80vh;
+        height: 80%; }
     
     #bigname,#landing-description-text p, news-container{
         margin-left: 30px;
@@ -846,7 +849,8 @@ project-card-text{
 @media only screen and (min-width: 1025px) {
 
     .home-img{
-        height: 20vh;}
+        min-height: 80vh;
+        height: 80%; }
 
     #bigname,#landing-description-text p, news-container{
         margin-left: 30px;
