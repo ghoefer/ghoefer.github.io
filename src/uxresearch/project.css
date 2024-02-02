@@ -806,6 +806,9 @@ font-size: 20px;
     .card-big-text{
         padding-top: 5px;
     }
+    .top-left{
+        width: 60%;
+    }
 }
 
 /* Medium: tablets */
@@ -968,6 +971,9 @@ font-size: 20px;
         .card-big-text{
             padding-top: 5px;
         }
+        .top-left{
+            width: 50%;
+        }
     }
 
 
@@ -977,6 +983,10 @@ font-size: 20px;
         font-size: 30px; 
         padding-bottom: 8px;
      }
+
+     .top-left{
+        width: 30%;
+    }
 
     .summary-details{
         width: 100%;
@@ -1011,6 +1021,7 @@ font-size: 20px;
         .img-with-label-label{
             font-size: 20px;
         }
+       
    
 }
 
@@ -1020,4 +1031,8 @@ font-size: 20px;
         font-size: 30px; 
         padding-bottom: 8px;
      }
+
+     .top-left{
+        width: 30%;
+    }
 }
