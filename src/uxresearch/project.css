@@ -652,7 +652,7 @@ font-size: 20px;
         padding-bottom: 50px;
     }
     .heading-text{
-        font-size: 12px;
+        font-size: 14px;
     }
     .heading-rect{
         width: 20px;
@@ -685,10 +685,13 @@ font-size: 20px;
     }
     .team-chart-teammate-title, .team-chart-teammate-name{
         padding-top: 15px;
+        font-size: 13px;
     }
     .team-chart-teamname{
         padding-bottom: 0px;
+        font-size: 14px;
     }
+    
     #teamcharts-wrapper{
         display: flex;
         flex-direction: column;
@@ -730,6 +733,9 @@ font-size: 20px;
     .img-with-label-label{
         font-size: 18px;
     }
+    .img-with-label {
+        align-self: start;
+    }
     
    
     
@@ -740,6 +746,13 @@ font-size: 20px;
     }
     .left, .right{
         width: 100%;
+    }
+
+    .learnings-section{
+        width: 80vw;
+        align-self: center;
+        align-items:start;
+        padding-top: 30px;
     }
     .standard-text-heading {
         max-width: 90vw;
