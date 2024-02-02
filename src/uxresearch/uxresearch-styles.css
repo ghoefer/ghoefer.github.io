@@ -106,7 +106,7 @@ keyword p, keyword line {
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 10px;
-    height: 25px;
+    height: 15px;
     object-fit: contain;
     align-self: flex-start;
     transition: transform 300ms ease;
@@ -134,41 +134,47 @@ keyword p, keyword line {
 /* Small: phones */
 @media only screen and (max-width: 481px) {
     .project-description{
-        font-size: 12px;
+        font-size: 16px;
     }
     .container-of-keywords {
+        padding-top: 20px;
         font-size: 12px;
-        visibility: hidden; /* hide for smaller devices */
+        /* visibility: hidden; hide for smaller devices */
     }
 
     .project-container {
-    height: 20vh;
+        flex-direction: column;
+    height: 60vh;
     }
     .project-right{
         padding-left: 20px;
-        width: 70%;
+        width: 90%;
+        height: 40%;
     }
     .project-left {
-        width: 30%; }
+        width: 100%;
+        height: 60%;
+     }
 }
 
 /* Medium: tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .project-description{
-        font-size: 12px;
+        font-size: 18px;
     }
     .project-container {
-        height: 20vh;
+        flex-direction: row;
+        height: 40vh;
         }
     .container-of-keywords {
         font-size: 12px;
     }
     .project-right{
         padding-left: 20px;
-        width: 70%;
+        width: 60%;
     }
     .project-left {
-    width: 30%; }
+    width: 40%; }
 }
 
 

@@ -601,15 +601,15 @@ project-card-text{
 }
 
 .IBM{
-    background-image: url('../src/uxresearch/ibm/assets/unitylaptop.svg');
+    background-image: url('src/uxresearch/ibm/assets/unitylaptop.svg');
 }
 
 .Facebook{
-    background-image: url('../src/uxresearch/facebook/assets/facebook-img.png');
+    background-image: url('src/uxresearch/facebook/assets/facebook-img.png');
 }
 
 .Samsung{
-    background-image: url('../src/uxresearch/samsung/assets/anh-nhat-uCqMa_s-JDg-unsplash.jpg');
+    background-image: url('src/uxresearch/samsung/assets/anh-nhat-uCqMa_s-JDg-unsplash.jpg');
 }
 
 
@@ -801,6 +801,7 @@ project-card-text{
     .nav-icon {
         display: flex; /* Displayed on small screens */
     }
+    
 }
 
 /* Large: laptops */
