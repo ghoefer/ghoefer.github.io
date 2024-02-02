@@ -134,6 +134,8 @@ align-items: flex-start;
     about-top-container{
         width: 80vw; 
         max-width: 900px;  
+        margin-bottom: 5vh;
+        margin-top: 5vh;
     }
 }
 
@@ -142,6 +144,8 @@ align-items: flex-start;
     about-top-container{
         width: 80vw; 
         max-width: 1000px;  
+        margin-bottom: 5vh;
+        margin-top: 5vh;
     }
     
 }
