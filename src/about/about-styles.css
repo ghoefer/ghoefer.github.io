@@ -11,6 +11,10 @@ about-top-container{
     border-radius: 20px;
     
 }
+.main{
+    display:flex;
+    justify-content: center;
+}
 
 #about-description-text {
 font-weight: 400;
@@ -110,7 +114,7 @@ align-items: flex-start;
         
     }
     about-top-container{
-        margin: 3vh;
+        width: 60vw;
         
     }
     #about-location{
@@ -120,7 +124,7 @@ align-items: flex-start;
     }
     #about-image-container{
         align-self: center;
-        width: 60vw;
+        width: 80vw;
     }
 }
 
@@ -128,14 +132,16 @@ align-items: flex-start;
 /* Large: laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     about-top-container{
-        margin: 7vh;  
+        width: 80vw; 
+        max-width: 900px;  
     }
 }
 
 /* XL: desktops */
 @media only screen and (min-width: 1025px) {
     about-top-container{
-        margin: 10vh;  
+        width: 80vw; 
+        max-width: 1000px;  
     }
     
 }
