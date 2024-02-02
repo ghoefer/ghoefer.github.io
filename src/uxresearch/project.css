@@ -10,16 +10,22 @@ section{
 
 .bigprojectimg{
     background-size: contain;
-    height: 85vh;
+    height: 60vh;
     background-repeat: no-repeat;
     
 }
+
+.top-proj-description{
+    /* font-size: 16px;  */
+    padding-bottom: 8px;
+ }
 
 .top-section{
     padding-left: 20px;
     display: flex;
     flex-direction: row;
     width: 100%;
+    background-color:black;
 }
 #date{
     color: #DDD;
@@ -34,10 +40,11 @@ section{
 
 .company-title{
     color: #FFF;
-font-size: 50px;
+font-size: 40px;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+padding-bottom: 8px;
 /* font-family:'Roboto'; */
 }
 
@@ -47,6 +54,7 @@ line-height: normal;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-bottom:8px;
     /* padding-top: 8px; */
 }
 
@@ -63,7 +71,8 @@ line-height: normal;
     margin:5px;
 }
 .label-container {
-    margin: 10px;
+  margin-top: 15px;
+  padding: 0px;
 }
 
 .qual-label{
@@ -107,7 +116,7 @@ line-height: normal;
 }
 
 #top-left{
-    width: 70%;
+    width: 60%;
 }
 
 #top-right{
@@ -581,8 +590,12 @@ font-size: 20px;
         font-size: 25px;
     }
     .top-details, #date{
-        font-size: 12px;
+        font-size: 14px;
     }
+    .top-proj-description{
+        font-size: 16px; 
+        padding-bottom: 8px;
+     }
 
     .padded-label {
         padding: 6px;
@@ -592,7 +605,7 @@ font-size: 20px;
     }
 
     .bigprojectimg{
-        height: 50vh;
+        height: 40vh;
     }
 
     .numbered-summary{
@@ -649,7 +662,7 @@ font-size: 20px;
         padding-bottom: 50px;
     }
     .top-left{
-        width: 100%;
+        width: 60%;
     }
 
     #top-right{
@@ -798,8 +811,12 @@ font-size: 20px;
 /* Medium: tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     .bigprojectimg{
-        height: 50vh;
+        height: 40vh;
     }
+    .top-proj-description{
+        font-size: 20px; 
+        padding-bottom: 8px;
+     }
 
     .numbered-summary-text{
         font-size: 14px;
@@ -829,7 +846,7 @@ font-size: 20px;
         padding-bottom: 50px;
     }
     .top-left{
-        width: 100%;
+        width: 60%;
     }
 
     #top-right{
@@ -956,6 +973,11 @@ font-size: 20px;
 
 /* Large: laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .top-proj-description{
+        font-size: 30px; 
+        padding-bottom: 8px;
+     }
+
     .summary-details{
         width: 100%;
     }
@@ -994,5 +1016,8 @@ font-size: 20px;
 
 /* XL: desktops */
 @media only screen and (min-width: 1025px) {
-
+    .top-proj-description{
+        font-size: 30px; 
+        padding-bottom: 8px;
+     }
 }
