@@ -620,6 +620,11 @@ project-card-text{
 
 /* Small: phones */
 @media only screen and (max-width: 481px) {
+
+    .footer-content{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .home-img{
         min-height: 100vh;
         height: 100%; }
