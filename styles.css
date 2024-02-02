@@ -435,12 +435,12 @@ blue-text{
     margin: 10px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    /* background-color: #2D2F3A; 
-    color: white;  */
+    background-color: black;
+    color: white;
     border: 2px solid white;
-    background-color: white;
-    color:#2D2F3A;
-    border: 2px solid #2D2F3A;
+    /* background-color: white; */
+    color: white;
+    border: 2px solid white;
     border-radius: 6px;
 }
 
