@@ -21,7 +21,7 @@ html{
     /* Photo by <a href="https://unsplash.com/@kirp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Kliatskyi</a> on <a href="https://unsplash.com/photos/jpu0gMXT9to?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
     background-image: url('assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg');
     background-size: cover;
-    height: 70vh;
+    /* height: 70vh; */
     background-position: bottom;
 }
 
@@ -622,7 +622,7 @@ project-card-text{
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .home-img{
+    .container{
         min-height: 80vh;
         height: 80%; }
 
@@ -752,7 +752,7 @@ project-card-text{
         width: 100%;
         height: 30vh;
     }
-    .home-img{
+    .container{
         min-height: 80vh;
         height: 80%; }
 
@@ -803,7 +803,7 @@ project-card-text{
 
 /* Large: laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    .home-img{
+    .container{
         min-height: 80vh;
         height: 80%; }
     
@@ -851,7 +851,7 @@ project-card-text{
 /* XL: desktops */
 @media only screen and (min-width: 1025px) {
 
-    .home-img{
+    .container{
         min-height: 80vh;
         height: 80%; }
 
