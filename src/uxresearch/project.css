@@ -211,19 +211,23 @@ background-color: #303030;
     font-weight: 700;
     padding-bottom: 20px;
     font-size: 20px;
+    white-space: nowrap;
 }
 
 .team-chart-teammate-name{
     font-weight: 700;
     align-self: end;
+    white-space: nowrap;
 }
 
 .team-chart-teammate-title{
     align-self: start;
+    white-space: nowrap;
 }
 
 .team-chart-teammate-title, .team-chart-teammate-name{
     padding-top: 30px;
+    white-space: nowrap;
 }
 
 .team-chart-names{
@@ -679,8 +683,8 @@ font-size: 20px;
         padding-bottom: 50px;
     }
     .team-chart-names, .team-chart-titles{
-        padding-left: 10px;
-        padding-right:10px;
+        padding-left: 5px;
+        padding-right: 5px;
         align-self: center;
         text-align: center;
     }
@@ -878,8 +882,8 @@ font-size: 20px;
         padding-bottom: 50px;
     }
     .team-chart-names, .team-chart-titles{
-        padding-left: 10px;
-        padding-right:10px;
+        padding-left: 5px;
+        padding-right: 5px;
         align-self: center;
         text-align: center;
     }
@@ -1035,6 +1039,11 @@ font-size: 20px;
         }
         .img-with-label-label{
             font-size: 20px;
+        }
+
+        .team-chart-names, .team-chart-titles{
+        padding-left: 10px; 
+        padding-right: 10px;
         }
        
    
