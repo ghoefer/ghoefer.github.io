@@ -612,6 +612,7 @@ project-card-text{
 .container{
     min-height: 80vh;
     height: 80%; 
+    width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: none;
