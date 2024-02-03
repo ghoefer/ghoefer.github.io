@@ -8,14 +8,19 @@
   Find it here https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp */
 
 
-var prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("nav-placeholder").style.top = "0";
+  let lastScrollTop = 0;
+  const navbar = document.getElementById('topnav-container');
+  
+  window.addEventListener('scroll', function() {
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop) {
+      // Scroll down
+      navbar.style.top = `-${navbar.offsetHeight}px`;
     } else {
-        document.getElementById("nav-placeholder").style.top = "-50px";
+      // Scroll up
+      navbar.style.top = '0';
     }
-    prevScrollpos = currentScrollPos;
-    }
-
+    lastScrollTop = scrollTop;
+  });
+  
