@@ -9,7 +9,7 @@
 
 
   let lastScrollTop = 0;
-  const navbar = document.getElementById('topnav-container');
+  const navbar = document.querySelector('.navbar');
   const navbarHeight = navbar.offsetHeight;
   
   window.addEventListener('scroll', function() {
