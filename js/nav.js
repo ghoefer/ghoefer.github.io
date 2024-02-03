@@ -3,26 +3,36 @@
 // 2. Shows the navbar when scrolling up
 // 3. Adds padding to the body to prevent the navbar from overlapping the content
 
-
-  /* Navbar auto hide/show feature is bootstrapped
-  Find it here https://www.w3schools.com/howto/howto_js_navbar_hide_scroll.asp */
-
-
-  let lastScrollTop = 0;
-  const navbar = document.querySelector('.navbar');
-  const navbarHeight = navbar.offsetHeight;
+function navfunction() {
+    /* Navbar auto hide/show feature is bootstrapped
+    Find it here https://bootstrap-menu.com/detail-autohide.html */
   
-  window.addEventListener('scroll', function() {
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
-      // Scroll down
-      navbar.style.transform = 'translateY(-100%)';
-    } else {
-      // Scroll up or at the top
-      navbar.style.transform = 'translateY(0)';
+  
+    el_autohide = document.querySelector('.autohide');
+    el_autohide.style.position = "fixed";
+  
+  //   console.log("is this working");
+    // add padding-top to body (if necessary)
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+  
+    if(el_autohide){
+    var last_scroll_top = 0;
+    window.addEventListener('scroll', function() {
+            let scroll_top = window.scrollY;
+        if(scroll_top < last_scroll_top) {
+                el_autohide.classList.remove('scrolled-down');
+                el_autohide.classList.add('scrolled-up');
+            }
+            else {
+                el_autohide.classList.remove('scrolled-up');
+                el_autohide.classList.add('scrolled-down');
+            }
+            last_scroll_top = scroll_top;
+    }); 
+    // window.addEventListener
     }
-    lastScrollTop = scrollTop;
-  });
-  
+    // if
+  }; 
+  // DOMContentLoaded  end hi
   
