@@ -23,13 +23,12 @@ line-height: 25px;
 align-items: center;
 text-align: left;
 display:flex;
-justify-content: center;
 height: 100%;
 width: 70vw;
 padding-left: 4vw;
 flex-direction: column;
-justify-content: center;
 align-items: flex-start;
+padding-top: 20px;
 
 }
 
@@ -107,7 +106,7 @@ align-items: flex-start;
     #about-description-text {
         padding-left: 0px;
         font-size: 14px;
-        line-height: 20px;
+        /* line-height: 20px; */
         width: auto;
         align-items: center;
     }
@@ -116,7 +115,7 @@ align-items: flex-start;
         
     }
     about-top-container{
-        width: 60vw;
+        width: 70vw;
         
     }
     #about-location{
