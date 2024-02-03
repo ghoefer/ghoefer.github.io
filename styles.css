@@ -609,6 +609,13 @@ project-card-text{
     background-image: url('src/uxresearch/samsung/assets/anh-nhat-uCqMa_s-JDg-unsplash.jpg');
 }
 
+.container{
+    min-height: 80vh;
+    height: 80%; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: none;
+}
 
 
 
