@@ -53,6 +53,7 @@ html{
     background: #2D2F3A;
     width: 100vw;
     max-height: 40px;
+    transition: top 0.3s;
     
 }
   

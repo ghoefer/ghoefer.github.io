@@ -10,17 +10,19 @@
 
   let lastScrollTop = 0;
   const navbar = document.getElementById('topnav-container');
+  const navbarHeight = navbar.offsetHeight;
   
   window.addEventListener('scroll', function() {
     let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     
-    if (scrollTop > lastScrollTop) {
+    if (scrollTop > lastScrollTop && scrollTop > navbarHeight) {
       // Scroll down
-      navbar.style.top = `-${navbar.offsetHeight}px`;
+      navbar.style.transform = 'translateY(-100%)';
     } else {
-      // Scroll up
-      navbar.style.top = '0';
+      // Scroll up or at the top
+      navbar.style.transform = 'translateY(0)';
     }
     lastScrollTop = scrollTop;
   });
+  
   
