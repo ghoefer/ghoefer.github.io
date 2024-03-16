@@ -20,7 +20,7 @@
     font-weight: 400;
     line-height: normal;
     width: 409px;
-    padding-left: 30px;
+    /* padding-left: 30px; */
 }
 
 .img-with-label-label{
@@ -76,8 +76,7 @@
     align-self: start;
     width: 80%;
     padding: 20px;
-    margin-left: 20px;
-    margin: 20px;
+    margin-top: 30px;
     /* background-color:#818181; */
 }
 
@@ -126,7 +125,7 @@ padding-left: 25px;
     }
     #goal-quote{
         font-size: 12px;
-        padding-left: 20px;
+        /* padding-left: 20px; */
         width: 60vw;
         padding-top:20px;
     }
@@ -139,7 +138,7 @@ padding-left: 25px;
     #goal-quote{
         align-self: center;
         padding-top: 10px;
-        padding-left: 0px;
+        /* padding-left: 0px; */
     }
 
 
@@ -160,7 +159,7 @@ padding-left: 25px;
     #goal-quote{
         align-self: center;
         padding-top: 20px;
-        padding-left: 0px;
+        /* padding-left: 0px; */
     }
 
 }

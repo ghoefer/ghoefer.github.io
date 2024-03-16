@@ -506,7 +506,7 @@ blue-text{
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     align-self: flex-start;
 }
 
@@ -516,7 +516,7 @@ blue-text{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    padding-left: 20px;
+    /* padding-left: 20px; */
     padding-top: 18px;
     align-self: flex-start;
 }

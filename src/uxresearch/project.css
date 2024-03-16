@@ -1,8 +1,8 @@
 section{
     display: flex;
     padding-bottom: 100px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     flex-direction: column;
 }
 
@@ -21,7 +21,7 @@ section{
  }
 
 .top-section{
-    padding-left: 20px;
+    padding-left: 30px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -69,7 +69,7 @@ padding-bottom: 8px;
 .padded-label {
     padding: 8px;
     border-radius: 6px;
-    margin:5px;
+    /* margin:5px; */
 }
 .label-container {
   margin-top: 15px;
@@ -97,7 +97,9 @@ padding-bottom: 8px;
 }
 
 .research-label-container {
-    margin: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 .mixedmeth-label{
     background-color: white;
@@ -343,7 +345,6 @@ padding-bottom: 50px;
     font-weight: 400;
     line-height: normal;
     font-style: italic;
-    padding-left: 30px;
     padding-top: 50px;
 }
 
@@ -435,7 +436,6 @@ card-group{
 
 
 .research-finding{
-    margin-left: 20px;
     font-size: 18px;
 }
 
@@ -460,7 +460,6 @@ card-group{
     overflow-x: hidden;
     justify-content: center;
     padding: 20px;
-    margin: 20px;
     width: 322px;
     
 }
@@ -798,7 +797,7 @@ font-size: 20px;
     .confidentiality-notice {
         font-size: 12px;
         width: 400px;
-        padding: 20px;}
+  }
     .quote-desc{
         font-size: 12px;
     }
