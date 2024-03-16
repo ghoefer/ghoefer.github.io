@@ -16,6 +16,7 @@ all-projects{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
 }
 .project-container{
     height: 40vh;
@@ -75,7 +76,7 @@ all-projects{
     bottom: 0px;
     color: #858484;
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 keyword {
@@ -101,7 +102,7 @@ keyword p, keyword line {
     text-transform: uppercase;
     font-size: 25px;
     font-weight: 600;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 10px;
     height: 15px;
     object-fit: contain;
