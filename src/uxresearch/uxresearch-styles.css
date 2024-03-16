@@ -24,15 +24,15 @@ all-projects{
     /* width: 90vw; */
     display: flex;
     flex-direction: row;
-    margin: 20px;
+    margin: 30px;
     background: #1E2028;
     border-radius: 20px;
     /* transition: width 100ms ease;
     transition: height 100ms ease;
     transition: transform 100ms ease; */
     position: relative;
-    padding-left: 30px;
-    padding-right: 30px;
+    /* padding-left: 30px;
+    padding-right: 30px; */
 
 }
 
