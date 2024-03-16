@@ -99,7 +99,7 @@ menu a:hover{
     font-size: 20px;
     font-weight: bold;
     color: white;
-    padding-left: 15px;
+    padding-left: 20px;
     /* font-family: 'Montserrat', sans-serif; */
 }
 
@@ -759,7 +759,7 @@ project-card-text{
 /* Medium: tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
     #bigname,#landing-description-text p, news-container{
-        margin-left: 30px;
+        margin-left: 20px;
     }
     #arrow{
         width: 30px;
@@ -852,7 +852,7 @@ project-card-text{
         height: 80%; }
     
     #bigname,#landing-description-text p, news-container{
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     #bigname{
@@ -900,7 +900,7 @@ project-card-text{
         height: 80%; }
 
     #bigname,#landing-description-text p, news-container{
-        margin-left: 30px;
+        margin-left: 20px;
     }
 
     #bigname{
