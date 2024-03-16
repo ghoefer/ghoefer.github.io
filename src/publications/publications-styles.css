@@ -1,5 +1,5 @@
 body{
-    background-color: #1E2027;
+    background-color: black;
     color: white;
 }
 top{
@@ -22,13 +22,14 @@ top{
 }
 
 .pub a {
-    color: #0062FF;
+    color: #5A5A5A;
     font-weight: 600;
 }
 
 .pub-title {
     font-weight: 600;
     margin-bottom: 5px;
+    color: #0073FF;
 }
 .pubs-list{
     padding-bottom: 30px;
