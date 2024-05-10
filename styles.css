@@ -43,6 +43,11 @@ html{
 
 /* navbar  */
 
+#navbar{
+    position: fixed;
+    top: 0px;
+}
+
 .topnav-container{
     display: flex;
     flex-direction: row;

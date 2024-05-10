@@ -3,7 +3,7 @@
 // 2. Shows the navbar when scrolling up
 // 3. Adds padding to the body to prevent the navbar from overlapping the content
 
-function navfunction() {
+// function navfunction() {
     /* Navbar auto hide/show feature is bootstrapped
     Find it here https://bootstrap-menu.com/detail-autohide.html */
   
@@ -31,8 +31,8 @@ function navfunction() {
 //             last_scroll_top = scroll_top;
 //     }); 
     // window.addEventListener
-    }
-    // if
-  }; 
+//     }
+//     // if
+//   }; 
   // DOMContentLoaded  end hi
   
