@@ -1,0 +1,244 @@
+.bigprojectimg{
+    background-image: url('assets/watsonx_big.jpg');
+    background-position: center;
+    background-color: black;
+}
+
+.userneed-img{
+    width: 50%;
+}
+
+
+/* Rectangle 325 */
+.text-container{
+    padding: 30px;
+    left: 95px;
+    top: 2173px;
+    background: #303030;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.text-with-background{
+font-size: 18px;
+font-weight: 400;
+padding: 20px;
+}
+
+
+
+
+
+#businessval-diagram{
+    width: 70%;
+    padding-right: 30px;
+    max-height: 50vh;
+}
+
+#comp-analysis-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#companalysis-img{
+width: 70vw;
+padding-left: 10px;
+padding-top: 30px;
+}
+
+#design-idea{
+    display:flex;
+    /* flex-direction: row; */
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#des-border-wrapper{
+    overflow-x: hidden;
+    justify-content: center;
+    padding: 30px;
+    margin: 30px;
+    width: 322px;
+    height:fit-content;
+    border: 1px solid black;
+    border-width: thin;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+#specsheet{
+    max-height: 40vh;
+    display:flex;
+    justify-content: center;
+    align-self: center;
+    width: 50%;
+    padding-right:10px;
+}
+
+.goal-img{
+    width: 80%;
+    padding-top: 30px;
+  
+}
+.goal-detail-text-group{
+    width: 100vw;
+    padding: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color:black;
+
+  }
+
+  .goal-detail-text-heading{
+    font-weight: 700;
+    /* padding-bottom: 10px; */
+    /* height: 60px; */
+    width: 70%;
+    color:black;
+  }
+
+#three-goals{
+    display: flex;
+    width: 100%;
+    padding-top: 10%;
+    display:flex;
+}
+
+.center-img-containers{
+    display: flex;
+    justify-content: center;
+    }
+
+#big-quest{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    /* align-self:center; */
+    /* padding: 60px; */
+}
+
+.video-container { 
+    position: relative; 
+    width: 100%; 
+    /* padding-bottom: 177.78%; 9:16 aspect ratio */
+    overflow: hidden;
+    margin: 0 auto; 
+} 
+
+.thumbnail { 
+    width: 297px; 
+    height: 528px; 
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    cursor: pointer;
+} 
+#thumbnail-badge{
+    /* width: 297px;  */
+    max-height: 400px; 
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.play-button { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    cursor: pointer; 
+    padding: 10px 20px; 
+    background-color: #ff0000; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+
+
+/* --------------------- */
+/* RESPONSIVE WEB */
+
+/* Small: phones */
+@media only screen and (min-width: 0px) and (max-width: 480px) {
+    .userneed-img{
+        width: 100%;
+      }
+
+      .goal-list{
+        flex-direction: column;
+      }
+      .border-wrapper {
+        margin:10px;
+    }
+    .right-img{
+        /* padding: 10px; */
+        padding-right: 0px;
+    }
+    .padtop60 {
+        padding-top: 0px;
+        padding-bottom: 30px;
+      }
+      #design-idea {
+        flex-direction: column;
+    }
+    #three-goals{
+        flex-direction: column;
+    }
+}
+
+
+/* Medium: tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .right-img{
+        /* padding: 10px; */
+        padding-right:0px;
+    }
+    .padtop60 {
+        padding-top: 0px;
+        padding-bottom: 30px;
+      }
+    
+    #design-idea {
+        flex-direction: column;
+    }
+    #three-goals{
+        flex-direction: column;
+    }
+    #thumbnail-badge{
+        height: 300px;
+    }
+}
+
+
+/* Large: laptops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+.padtop60 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      #design-idea {
+        flex-direction: row;
+    }
+    #thumbnail-badge{
+        height: 350px;
+    }
+}
+
+/* XL: desktops */
+@media only screen and (min-width: 1025px) {
+    .padtop60 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+      #design-idea {
+        flex-direction: row;
+    }
+    
+}

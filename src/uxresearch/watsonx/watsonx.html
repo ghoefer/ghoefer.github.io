@@ -1,0 +1,502 @@
+<!-- HTML main page -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore Gabby Hoefer's UX research project at Facebook, focusing on the VR store. Discover her methodologies, insights, and findings aimed at optimizing user experiences within the virtual reality shopping environment.">
+
+    <title>Watsonx Analytics</title>
+    <link href="watsonx.css" rel="stylesheet">
+    <link href="../../../styles.css" rel="stylesheet">
+    <link href="../project.css" rel="stylesheet">
+    <!-- Add icon library -- w3 schools -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="watsonx.js"></script> -->
+
+    <!-- Add the Lightbox2 CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <!-- Add jQuery (required by Lightbox2) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Add the Lightbox2 JavaScript file -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+
+</head>
+
+<body>
+
+<!--Navigation bar-->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="../../../js/nav.js"></script>
+<div id="nav-placeholder"></div>
+<script>
+    $(document).ready(function() {
+        $.get("../../../components/nav.html", function(data){
+            $("#nav-placeholder").append(data);
+            $.getScript("../../../js/nav.js",function(){
+            navfunction();});
+            });   
+    });
+
+    function responsiveBar() {
+        var menu = document.querySelector('menu'); // Select the menu items
+        if (menu.style.display === 'flex') {
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'flex';
+        }
+        var icon=document.getElementsByClassName("fa fa-bars")[0];
+        if(icon){
+        icon.className = icon.className.replace("fa fa-bars", "fa fa-close");
+        }
+        else{
+        icon=document.getElementsByClassName("fa fa-close")[0];
+        icon.className = icon.className.replace("fa fa-close", "fa fa-bars");
+        }
+    }
+</script>
+<!--end of Navigation bar-->
+
+
+
+<!-- top section -->
+<div class="uxr top-section text">
+    <div id="top-left">
+
+            <div class="company-title">Watsonx Analytics</div>
+            <div class="top-details">UX Researcher</div>
+            <div class="top-proj-description">Creating a central hub for IBMers to submit generative AI use cases.</div>
+            <div class="label-container"><span class="padded-label blue-gray">Short Term Project</span></div>
+
+    </div>
+
+</div>
+<section class="bigprojectimg"></section>
+
+<!-- summary section -->
+<section class="black-2-bg">
+    <div class="project-section-heading">
+        <div class="heading-rect white-bg"></div>
+        <div class="heading-text">SUMMARY</div>
+    </div>
+    <div class="numbered-summary">
+        <div class="numbered-summary-item">
+            <div class="numbered-summary-number circle">1</div>
+            <div class="numbered-summary-text">Product Background</div>
+        </div>
+        <div class="numbered-summary-item">
+            <div class="numbered-summary-number circle">2</div>
+            <div class="numbered-summary-text">Problem & Value</div>
+        </div>
+        <div class="numbered-summary-item">
+            <div class="numbered-summary-number circle">3</div>
+            <div class="numbered-summary-text">Exploration</div>
+        </div>
+        <div class="numbered-summary-item">
+            <div class="numbered-summary-number circle">4</div>
+            <div class="numbered-summary-text">User Research</div>
+        </div>
+        <div class="numbered-summary-item">
+            <div class="numbered-summary-number circle">5</div>
+            <div class="numbered-summary-text">Outcomes</div>
+        </div>
+    </div>
+    <div id="summary-line"></div>
+
+    <div class="summary-details">
+        <div class="summary-detail-text-group">
+            <div class="summary-detail-text-heading">The product</div>
+            <div class="summary-detail-text">IBMers submit their new generative AI product ideas to our platform, then they are reviewed and potentially approved.</div>
+        </div>
+        <div class="summary-detail-text-group">
+            <div class="summary-detail-text-heading">Key responsibilities</div>
+            <div class="summary-detail-text">UX Research to improve the platform’s overall submission and review process, qualitative research and sharing out with stakeholders.</div>
+        </div>
+        <div class="summary-detail-text-group">
+            <div class="summary-detail-text-heading">What made this unique</div>
+            <div class="summary-detail-text">Working on the cutting edge of new generative AI use cases and learning about how to calculate business value.</div>
+        </div>
+    </div>
+
+</section>
+
+<!-- team section -->
+<section class="blue-bg">
+    <div class="project-section-heading">
+        <div class="heading-rect white-bg"></div>
+        <div class="heading-text">THE PEOPLE (the best part)</div>
+    </div>
+    <row-wrapper>
+        <div class="team-chart">
+            <div class="team-chart-teamname">CIO Watsonx Analytics Team (alphabetical)</div>
+            <div class="team-chart-members">
+                <div class="team-chart-names">
+                    <div class="team-chart-teammate-name">Aline Mian Soares</div>
+                    <div class="team-chart-teammate-name">Ana Gerin</div>
+                    <div class="team-chart-teammate-name">Annette Tassone</div>
+                    <div class="team-chart-teammate-name">Bruno Bortulotto</div>
+                    <div class="team-chart-teammate-name">Chloe Wang</div>
+                    <div class="team-chart-teammate-name">Gabby Hoefer</div>
+                    <div class="team-chart-teammate-name">Jay LaPlante</div>
+                    <div class="team-chart-teammate-name">Jessica Bolding</div>
+                    <div class="team-chart-teammate-name">Laura Rodriguez</div>
+                    <div class="team-chart-teammate-name">Mika Jugovich</div>
+                    <div class="team-chart-teammate-name">Randal Ries</div>
+                    <div class="team-chart-teammate-name">Stefa Etchegaray Garcia</div>
+                    <div class="team-chart-teammate-name">Steven Fiscaletti</div>
+                    <div class="team-chart-teammate-name">Tyler Waite</div>
+                    
+
+                </div>
+
+                <div class ="team-chart-titles">
+                    <div class="team-chart-teammate-title">Business Transformation</div>
+                    <div class="team-chart-teammate-title">Automation Senior Leader</div>
+                    <div class="team-chart-teammate-title">UXR Creative Director</div>
+                    <div class="team-chart-teammate-title">Product Manager</div>
+                    <div class="team-chart-teammate-title">Data Architect</div>
+                    <div class="team-chart-teammate-title">UX Researcher</div>
+                    <div class="team-chart-teammate-title">Product Owner Lead</div>
+                    <div class="team-chart-teammate-title">Program Manager, CAO</div>
+                    <div class="team-chart-teammate-title">Product Strategist</div>
+                    <div class="team-chart-teammate-title">Senior Data Scientist</div>
+                    <div class="team-chart-teammate-title">Analytics Manager</div>
+                    <div class="team-chart-teammate-title">Head of Data Science, CAO</div>
+                    <div class="team-chart-teammate-title">Chief Business Architect</div>
+                    <div class="team-chart-teammate-title">Advisory Data Scientist</div>
+
+                </div>
+            </div>
+        </div> 
+
+    </row-wrapper>
+    </div>
+</section>
+
+<!-- Our product section -->
+<section  class="black-bg">
+    <div class="project-section-heading">
+        <div class="heading-rect white-bg"></div>
+        <div class="heading-text">THE PRODUCT</div>
+    </div>
+    <div class="big-idea">
+        <div class="big-idea-content">
+            <div class="main-point">Internal hub for genAI use cases</div>
+        </div>
+    </div>
+
+    <div class="container-LR">
+        <div class="left"style="justify-content:center;">
+            <div class="text-container">
+                <div class="text-with-background" >
+                    Like many companies, leadership is encouraging IBMers to bring new ideas for generative AI infused products. 
+                    <br><br>Our product is a review system to <blue-text>decide which ideas IBM organizations will invest in.</blue-text> 
+                    <br><br>We have several reviewers, but lately they’ve had an overwhelming number of new submissions and are falling behind. 
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <a href="assets/watsonx_big.jpg" data-lightbox="image-1" data-title="Image 1">
+                <img class="right-img" src="assets/watsonx_big.jpg" alt="Comparing how new releases are surfaced across each platform that the store has: VR, mobile and web.">
+            </a>
+            
+        </div>
+    </div>
+
+
+</section>
+
+<!-- Problem evaluation section -->
+<section class="black-1-bg">
+    <div class="project-section-heading">
+        <div class="heading-rect white-bg"></div>
+        <div class="heading-text">PROBLEM EVALUATION</div>
+    </div>
+    <div class="big-idea">
+        <div class="big-idea-content">
+            <div class="main-point-smallheading">Main design challenge</div>
+            <div class="main-point">How might we increase user <blue-text>exposure to newly released games</blue-text> in the Oculus app store?</div>
+        </div>
+    </div>
+
+    <div class="container-LR">
+        <div id="left-bv">
+            <div class="small-text-heading">
+                Breaking down the problem
+            </div>
+            <div class="small-text-subheading">
+                There are other new released apps that the user can view, but these are the only entry points without prior knowledge of release dates.
+             </div>
+        </div>
+        <!-- <div class="right"> -->
+            <img src="assets/problem-img.svg" alt="Break down of phone screens showing that new releases are not being accurately shown in the Oculus store" class="userneed-img">
+        <!-- </div> -->
+    </div>
+    <div class="goal-list">
+        <div class="border-wrapper blue-bg">
+            <div class="border-title white">Top priority</div>
+            <div class="border-desc white">How might we differentiate new apps among <bold>mixed</bold> content?   
+            </div>      
+        </div>
+        <div class="border-wrapper">
+            <div class="border-title white">Stretch goal</div>
+            <div class="border-desc white">How might we make the <bold>new releases shelf</bold> stand out more?   
+            </div>      
+        </div>
+        <div class="border-wrapper">
+            <div class="border-title white">Stretch goal</div>
+            <div class="border-desc white">How might we improve the new releases <bold>browsing</bold> experience?   
+            </div>      
+        </div>
+    </div>
+
+
+</section>
+
+<!-- Business value section -->
+<section class="gray-1-bg">
+    <div class="project-section-heading">
+        <div class="heading-rect white-bg"></div>
+        <div class="heading-text">BUSINESS VALUE</div>
+    </div>
+
+    <div class="container-LR">
+        <div class="left" style="justify-content: center;">
+            <div class="standard-text-heading">
+                Previous research shows new releases drive a significant amount of revenue.
+            </div>
+            <div class="standard-text-subheading">
+                The first weeks account for a large x% of all purchases in the first few months. New releases drive x% of revenue, so its important users are able to easily discover them.
+             </div>
+        </div>
+        <div class="right">
+            <a href="assets/businessval_large.png" data-lightbox="image-1" data-title="Business value diagram">
+            <img id="businessval-diagram" src="assets/businessval_chart.svg" alt="Timeline of Unity's development.">
+             </a>
+        </div>
+
+</section>
+
+<!-- competitor analysis section -->
+<section class="black-1-bg">
+    <div class="project-section-heading">
+        <div class="heading-rect white-bg"></div>
+        <div class="heading-text">COMPETITOR ANALYSIS</div>
+    </div>
+
+    <div id="comp-analysis-content">
+        <div class="standard-text-heading">
+            I analyzed how various competitors help their users discover new products. Three main design trends emerged.
+        </div>
+
+        <img id="companalysis-img" src="assets/competitoranalysis.png" alt="Competitor analysis of 3 kinds of discovery for new products: badging, categorizing and browsing.">
+    </div>
+
+</section>
+
+<!-- brainstorming/ideation section -->
+<section class="gray-2-bg black-2-text">
+    <div class="project-section-heading">
+        <div class="heading-rect black-1-bg"></div>
+        <div class="heading-text" style="color:#1E2027;">BRAINSTORMING & IDEATION</div>
+    </div>
+    
+    
+
+    <div class="container-LR padtop60">
+        <div class="left" style="justify-content: center;">
+            <div class="standard-text-heading">
+                Next I began ideating and exploring potential solutions.
+            </div>
+            <div class="standard-text-subheading">
+                I started with pen and paper, then worked my way up to high fidelity explorations with feedback from the XFN team.
+            </div>
+        </div>
+        <div class="right">
+            <div class="row">
+                <img class="standard-right-side-image" src="assets/badging.png" alt="iPhone with 4 different badges on top of it, showing that badging is only good for user discoverability when used correctly, otherwise it is distracting.">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-LR padtop60">
+        <div class="left" style="justify-content: center;">
+            <div class="standard-text-heading">
+                Two categories of badges: temporary and permanent.
+            </div>
+            <div class="standard-text-subheading">
+                The Oculus store is using badging to differentiate games in other ways, such as when a game is on discount. But it’s already pretty full.
+            </div>
+        </div>
+        <div class="right">
+            <div class="row">
+                <img class="standard-right-side-image" src="assets/perm_temp_badges.svg" alt="Diagram of the 3 personas created for Unity.">
+            </div>
+        </div>
+    </div>
+
+    <div id="design-idea" class= "padtop60">
+            <div id="des-border-wrapper" class="border-wrapper black">
+                <div class="border-title black">Design idea</div>
+                <div class="border-desc black">Temporary information is badged, permanent information below the cover  
+                </div>      
+            </div>
+            <div class="row">
+                <a href="assets/specsheet.png" data-lightbox="image-1" data-title="Specsheet">
+                    <img id="businessval-diagram" src="assets/specsheet.png" alt="Spec sheet for the design I proposed across VR, mobile and web">
+                </a>
+            </div>
+    </div>
+</section>
+
+
+<!-- UXR -->
+<section  class="white-bg">
+    <div class="project-section-heading">
+        <div class="heading-rect black-2-bg"></div>
+        <div class="heading-text black-2-text">UX RESEARCH</div> 
+    </div>
+    <div class="container-LR black-2-text">
+        <div class="left" style="justify-content: center;">
+            <div class="standard-text-heading black-2-text">
+                1:1 user interviews with 10 Oculus Quest Owners over UserZoom (twice!).
+            </div>
+            <div class="standard-text-subheading black-2-text">
+                I designed two user studies which were conducted by Tianyu Koenig. The second iterated on the findings of the first. Results of the studies are confidential.
+            </div>
+        </div>
+        <div class="right">
+            <div class="row">
+                <a href="assets/whiteboard.png" data-lightbox="image-1" data-title="Brainstorm & ideation">
+                    <img class="standard-right-side-image" src="assets/whiteboard.png" alt="White board where I built out the user study that was conducted.">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="three-goals">
+        <div class="goal-detail-text-group">
+            <div class="goal-detail-text-heading">Goal #1: Badging placement and iconography usage</div>
+            <a class="center-img-containers" href="assets/uxr_goal1.png" data-lightbox="image-1" data-title="Badging variations">
+            <img class="goal-img" src="assets/uxr_goal1.png" alt="Diagram of the 4 different variations for badges: next to the text or on top of image, then an icon or a text badge.">
+            </a>
+            
+        </div>
+        <div class="goal-detail-text-group">
+            <div class="goal-detail-text-heading">Goal #2: Modifying the new releases layout</div>
+            <a class="center-img-containers" href="assets/uxr_goal2.png" data-lightbox="image-1" data-title="Layouts for user research">
+            <img class="goal-img" src="assets/uxr_goal2.png" alt="Two different new release layouts that we tested on iPhone screens.">
+                </a>
+        </div>
+        <div class="goal-detail-text-group">
+            <div class="goal-detail-text-heading">Goal #3: Taxonomy and discoverability of Bundle badge</div>
+            <a class="center-img-containers" href="assets/uxr_goal3.png" data-lightbox="image-1" data-title="Badges in the existing system">
+                <img class="goal-img" src="assets/uxr_goal3.png" alt="Exploring how the new badging system would fit in with the bundle badges.">
+                    </a>
+        </div>
+        
+    </div>
+
+</section>
+
+<!-- UXR -->
+<section  class="black-bg">
+    <div class="project-section-heading">
+        <div class="heading-rect white-bg"></div>
+        <div class="heading-text white">DESIGN OUTCOME</div> 
+    </div>
+    <div class="big-idea">
+        <div class="big-idea-content">
+            <div class="main-point-smallheading">User discovery of new released apps</div>
+            <div class="main-point">One big problem, three simple solutions.</div>
+        </div>
+    </div>
+
+    <div class="container-LR">
+        <div class="left"style="justify-content:center;">
+            <div class="standard-text-heading" >
+                A set of <blue-text>badges</blue-text> for new releases that fits with the current design system.
+            </div>
+            <ul class="research-finding standard-text-subheading white">
+                <li>
+                    As new releases and play a major role in purchase decision, it’s crucial to keep this information as discoverable as possible.                </li>
+                <br>
+                <li>
+                    This also keeps the system scalable, so that if there is other permanent information to come as VR evolves, it can also be placed below.
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="row">
+                <div class="video-container" data-video-id="W2xNPDwRiZg"> 
+                    <img id="thumbnail-badge" src="assets/thumb_larger.png" alt="Video Thumbnail"> 
+                    <button class="play-button">Play Video</button> 
+                </div>             
+            </div>
+        </div>
+    </div>
+
+   
+
+    <div class="container-LR padtop60">
+        <div class="left"style="justify-content:center;">
+            <div class="standard-text-heading" >
+                Entry point for when to showcase a <blue-text>single major release</blue-text> close to release week.
+            </div>
+            <ul class="research-finding standard-text-subheading white">
+                <li>
+                    There aren’t too many new releases, so intentionally advertising one makes sense.<br>
+                <br>
+                <li>
+                    Autoplaying the trailer makes the new release particularly stand out among the shelves, while allowing the user to scroll to see more details and featured images.
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="row">
+                <div class="video-container" data-video-id="_TR-_MJTgbk"> 
+                    <img class="thumbnail" src="assets/thumb_single_highlight.png" alt="Video Thumbnail"> 
+                    <button class="play-button">Play Video</button> 
+                </div>             
+            </div>
+        </div>
+    </div>
+
+    <div class="container-LR padtop60">
+        <div class="left"style="justify-content:center;">
+            <div class="standard-text-heading" >
+                A whole new way of browsing <blue-text>multiple new releases</blue-text>, while showcasing popular new apps.
+            </div>
+            <ul class="research-finding standard-text-subheading white">
+                <li>
+                    I chose to modify the chart layout so that content could be seen in an intuitive way that the user is already familiar with.             <br>
+                <br>
+                <li>
+                    This also eliminates the need for a second click into the new releases chart.
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="row">
+                <div class="video-container" data-video-id="9RoU65sua8Y"> 
+                    <img class="thumbnail" src="assets/thumb_multi_newreleases.png" alt="Video Thumbnail"> 
+                    <button class="play-button">Play Video</button> 
+                </div>             
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer id="footer-placeholder"></footer>
+<script>
+    $.get("../../../components/footer.html", function(data){
+        $("#footer-placeholder").replaceWith(data);
+    });   
+</script>
+<!-- END FOOTER -->
+
+</body>
