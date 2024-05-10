@@ -161,6 +161,33 @@ padding-top: 30px;
 }
 
 
+#participant-wheel{
+    height: 460px;
+    padding-right: 20px;
+    align-self: end;
+}
+
+#participant-wheel-text{
+    font-size: 18px;
+    align-self: start;
+    width: 80%;
+    padding: 20px;
+    margin-top: 30px;
+    /* background-color:#818181; */
+}
+
+#wheel{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    align-self: center;
+}
+
+#participant-text-list{
+padding-left: 25px;
+}
+
 
 /* --------------------- */
 /* RESPONSIVE WEB */
