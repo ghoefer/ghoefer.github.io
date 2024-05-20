@@ -6,9 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Coming Soon</title>
-    <link href="../../styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
         <!-- social icons --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="../../js/script.js"></script>
+    <script src="js/script.js"></script>
  
     <style>
        wrapper {
@@ -52,7 +52,7 @@
     $(document).ready(function() {
         $.get("components/nav.html", function(data){
             $("#nav-placeholder").append(data);
-            $.getScript("../../js/nav.js",function(){
+            $.getScript("js/nav.js",function(){
             navfunction();});
             });   
     });
@@ -80,7 +80,7 @@
     <h1>Coming Soon</h1>
     <p>This page is a work in progress.</p>
     <p>Probably because I'm too busy biking.</p>
-    <img src="biking.png" alt="Photo of Gabby biking." width="300">
+    <img src="src/comingsoon/biking.png" alt="Photo of Gabby biking." width="300">
     <p>Check back soon:</p>
 
     <div class="countdown" id="countdown"></div>
@@ -98,7 +98,7 @@
 
     <script>
         // Set your target date and time for the launch
-        const targetDate = new Date("2024-06-01T00:00:00").getTime();
+        const targetDate = new Date("2024-09-01T00:00:00").getTime();
 
         // Update the countdown every second
         const countdown = setInterval(function() {
