@@ -8,8 +8,8 @@
     <meta name="description" content="Learn more about Gabby Hoefer's background in user research, her experience, projects, and values. Discover who she is and what drives her to innovate and create.">
     
     <title>About</title>
-    <link href="about-styles.css" rel="stylesheet">
-    <link href="../../styles.css" rel="stylesheet">
+    <link href="src/about/about-styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <!-- Add icon library -- w3 schools -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -18,13 +18,13 @@
 
 <!--Navigation bar-->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="../../js/nav.js"></script>
+<script src="js/nav.js"></script>
 <div id="nav-placeholder"></div>
 <script>
     $(document).ready(function() {
-        $.get("../../components/nav.html", function(data){
+        $.get("components/nav.html", function(data){
             $("#nav-placeholder").append(data);
-            $.getScript("../../js/nav.js",function(){
+            $.getScript("js/nav.js",function(){
             navfunction();});
             });   
     });
@@ -56,7 +56,7 @@
             <div class="main">
                 <about-top-container>
                     <div id="about-image-container">
-                        <img src="gabby.jpg" alt="Gabby Hoefer standing in front of lake in Rhode Island in the winter">
+                        <img src="src/about/gabby.jpg" alt="Gabby Hoefer standing in front of lake in Rhode Island in the winter">
                     </div>
                     <div id="about-description-text">
                         <div id="about-location">📍 Brooklyn, New York, Earth</div>
@@ -86,7 +86,7 @@
 <!-- FOOTER -->
 <footer id="footer-placeholder"></footer>
 <script>
-    $.get("../../components/footer.html", function(data){
+    $.get("components/footer.html", function(data){
         $("#footer-placeholder").replaceWith(data);
     });   
 </script>

@@ -17,13 +17,13 @@
 
 <!--Navigation bar-->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="../../../js/nav.js"></script>
+<script src="js/nav.js"></script>
 <div id="nav-placeholder"></div>
 <script>
     $(document).ready(function() {
-        $.get("../../../components/nav.html", function(data){
+        $.get("components/nav.html", function(data){
             $("#nav-placeholder").append(data);
-            $.getScript("../../../js/nav.js",function(){
+            $.getScript("js/nav.js",function(){
             navfunction();});
             });   
     });
@@ -52,10 +52,10 @@
 <all-projects>
 
      <!-- Watsonx Analytics -->
-     <a href="../../src/uxresearch/watsonx/watsonx.html">
+     <a href="watsonx.html">
         <div class="project-container">
             <div class ="project-left">
-                <img src="watsonx/assets/watsonx_big.jpg" alt="Photo of watsonx logo with purple circles surrounding it.">
+                <img src="src/uxresearch/watsonx/assets/watsonx_big.jpg" alt="Photo of watsonx logo with purple circles surrounding it.">
             </div>
             <div class="project-right">
                 <img class="company-name" src="ibm/assets/ibm-logo.png" alt="IBM company logo">
@@ -69,13 +69,13 @@
     </a>
 
     <!-- IBM -->
-    <a href="../../src/uxresearch/ibm/ibm.html">
+    <a href="unity.html">
         <div class="project-container">
             <div class ="project-left">
                 <img id="ibm-unity-img" src="ibm/assets/laptopblack.png" alt="Laptop sitting on a block with chrome opened to CIO Unity homescreen with our team designs">
             </div>
             <div class="project-right">
-                <img class="company-name" src="ibm/assets/ibm-logo.png" alt="Facebook company logo">
+                <img class="company-name" src="src/uxresearch/ibm/assets/ibm-logo.png" alt="Facebook company logo">
                 <p class="project-description">Start to sunset: building a new learning platform to optimize global team performance.</p>
                 <div class="container-of-keywords">
                     <keyword><p>UX Research</p><line>|</line></keyword>
@@ -90,13 +90,13 @@
     <!-- Facebook -->
     <!-- on click of project-container, go to facebook.html -->
 
-    <a href="../../src/uxresearch/facebook/facebook.html">
+    <a href="facebook.html">
         <div class="project-container">
             <div class ="project-left">
-                <img src="facebook/assets/facebook-img.png" alt="Screens of Facebook app with my designs">
+                <img src="src/uxresearch/facebook/assets/facebook-img.png" alt="Screens of Facebook app with my designs">
             </div>
             <div class="project-right">
-                <img class="company-name" src="facebook/assets/facebook-logo.png" alt="Facebook company logo">
+                <img class="company-name" src="src/uxresearch/facebook/assets/facebook-logo.png" alt="Facebook company logo">
                 <p class="project-description">Increasing user exposure of new apps in the Oculus Store.</p>
                 <div class="container-of-keywords">
                     <keyword><p>Product Design</p><line>|</line></keyword>
@@ -108,14 +108,14 @@
     </a>
 
     <!-- Samsung -->
-    <a href="../../src/comingsoon/comingsoon.html">
+    <a href="comingsoon.html">
         <div class="project-container">
             <div class ="project-left">
                 <!-- Photo by <a href="https://unsplash.com/@anhnhat1205?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Anh Nhat</a> on <a href="https://unsplash.com/photos/uCqMa_s-JDg?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> -->
-                <img src="samsung/assets/anh-nhat-uCqMa_s-JDg-unsplash.jpg" alt="Photo by Anh Nhat on Unsplash. Image of Samsung phone and box that it comes in.">
+                <img src="src/uxresearch/samsung/assets/anh-nhat-uCqMa_s-JDg-unsplash.jpg" alt="Photo by Anh Nhat on Unsplash. Image of Samsung phone and box that it comes in.">
             </div>
             <div class="project-right">
-                <img class="company-name" src="samsung/assets/samsung-logo.png" alt="Official Samsung logo from the Samsung website.">
+                <img class="company-name" src="src/uxresearch/samsung/assets/samsung-logo.png" alt="Official Samsung logo from the Samsung website.">
                 <p class="project-description">Designing the Samsung camera app UI to increase engagement.</p>
                 <div class="container-of-keywords">
                     <keyword><p>User Research</p><line>|</line></keyword>
@@ -131,7 +131,7 @@
 <!-- FOOTER -->
 <footer id="footer-placeholder"></footer>
 <script>
-    $.get("../../components/footer.html", function(data){
+    $.get("components/footer.html", function(data){
         $("#footer-placeholder").replaceWith(data);
     });   
 </script>
