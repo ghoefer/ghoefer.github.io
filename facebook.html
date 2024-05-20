@@ -8,12 +8,12 @@
     <meta name="description" content="Explore Gabby Hoefer's UX research project at Facebook, focusing on the VR store. Discover her methodologies, insights, and findings aimed at optimizing user experiences within the virtual reality shopping environment.">
 
     <title>Facebook</title>
-    <link href="facebook.css" rel="stylesheet">
-    <link href="../../../styles.css" rel="stylesheet">
-    <link href="../project.css" rel="stylesheet">
+    <link href="src/uxresearch/facebook/facebook.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link href="src/uxresearch/project.css" rel="stylesheet">
     <!-- Add icon library -- w3 schools -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="facebook.js"></script>
+    <script src="src/uxresearch/facebook/facebook.js"></script>
 
     <!-- Add the Lightbox2 CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
@@ -35,7 +35,7 @@
     $(document).ready(function() {
         $.get("components/nav.html", function(data){
             $("#nav-placeholder").append(data);
-            $.getScript("../../../js/nav.js",function(){
+            $.getScript("js/nav.js",function(){
             navfunction();});
             });   
     });
@@ -175,9 +175,9 @@
     </div>
     <div class="row">
         <!-- img from: Photo by <a href="https://unsplash.com/@minhphamdesign?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Minh Pham</a> on <a href="https://unsplash.com/photos/jSAb1ifwf8Y?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-        <img src="assets/minh-pham-jSAb1ifwf8Y-unsplash.jpg" alt="Quest VR image that is free for commercial use" id="big-quest">
+        <img src="src/uxresearch/facebook/assets/minh-pham-jSAb1ifwf8Y-unsplash.jpg" alt="Quest VR image that is free for commercial use" id="big-quest">
         <!-- Photo by <a href="https://unsplash.com/@jamesyarema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">James Yarema</a> on <a href="https://unsplash.com/photos/SN8__WW3vzk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
-        <img src="assets/james-yarema-SN8__WW3vzk-unsplash.jpg" alt="Quest VR image that is free for commercial use" id="big-quest">
+        <img src="src/uxresearch/facebook/assets/james-yarema-SN8__WW3vzk-unsplash.jpg" alt="Quest VR image that is free for commercial use" id="big-quest">
     </div>
 
     <div class="container-LR" style="Padding-top: 100px;">
@@ -190,8 +190,8 @@
             </div>
         </div>
         <div class="right">
-            <a href="assets/audit-1.png" data-lightbox="image-1" data-title="Image 1">
-                <img class="right-img" src="assets/audit-1.png" alt="Comparing how new releases are surfaced across each platform that the store has: VR, mobile and web.">
+            <a href="src/uxresearch/facebook/assets/audit-1.png" data-lightbox="image-1" data-title="Image 1">
+                <img class="right-img" src="src/uxresearch/facebook/assets/audit-1.png" alt="Comparing how new releases are surfaced across each platform that the store has: VR, mobile and web.">
             </a>
             
         </div>
@@ -206,8 +206,8 @@
             </div>
         </div>
         <div class="right">
-            <a href="assets/audit-2.png" data-lightbox="image-1" data-title="Image 1">
-            <img class="right-img" src="assets/audit-2.png" alt="Audit of how users navigate to new releases and identified challenges they face.">
+            <a href="src/uxresearch/facebook/assets/audit-2.png" data-lightbox="image-1" data-title="Image 1">
+            <img class="right-img" src="src/uxresearch/facebook/assets/audit-2.png" alt="Audit of how users navigate to new releases and identified challenges they face.">
             </a>
         </div>
     </div>
@@ -237,7 +237,7 @@
              </div>
         </div>
         <!-- <div class="right"> -->
-            <img src="assets/problem-img.svg" alt="Break down of phone screens showing that new releases are not being accurately shown in the Oculus store" class="userneed-img">
+            <img src="src/uxresearch/facebook/assets/problem-img.svg" alt="Break down of phone screens showing that new releases are not being accurately shown in the Oculus store" class="userneed-img">
         <!-- </div> -->
     </div>
     <div class="goal-list">
@@ -278,8 +278,8 @@
              </div>
         </div>
         <div class="right">
-            <a href="assets/businessval_large.png" data-lightbox="image-1" data-title="Business value diagram">
-            <img id="businessval-diagram" src="assets/businessval_chart.svg" alt="Timeline of Unity's development.">
+            <a href="src/uxresearch/facebook/assets/businessval_large.png" data-lightbox="image-1" data-title="Business value diagram">
+            <img id="businessval-diagram" src="src/uxresearch/facebook/assets/businessval_chart.svg" alt="Timeline of Unity's development.">
              </a>
         </div>
 
@@ -297,7 +297,7 @@
             I analyzed how various competitors help their users discover new products. Three main design trends emerged.
         </div>
 
-        <img id="companalysis-img" src="assets/competitoranalysis.png" alt="Competitor analysis of 3 kinds of discovery for new products: badging, categorizing and browsing.">
+        <img id="companalysis-img" src="src/uxresearch/facebook/assets/competitoranalysis.png" alt="Competitor analysis of 3 kinds of discovery for new products: badging, categorizing and browsing.">
     </div>
 
 </section>
@@ -322,7 +322,7 @@
         </div>
         <div class="right">
             <div class="row">
-                <img class="standard-right-side-image" src="assets/badging.png" alt="iPhone with 4 different badges on top of it, showing that badging is only good for user discoverability when used correctly, otherwise it is distracting.">
+                <img class="standard-right-side-image" src="src/uxresearch/facebook/assets/badging.png" alt="iPhone with 4 different badges on top of it, showing that badging is only good for user discoverability when used correctly, otherwise it is distracting.">
             </div>
         </div>
     </div>
@@ -338,7 +338,7 @@
         </div>
         <div class="right">
             <div class="row">
-                <img class="standard-right-side-image" src="assets/perm_temp_badges.svg" alt="Diagram of the 3 personas created for Unity.">
+                <img class="standard-right-side-image" src="src/uxresearch/facebook/assets/perm_temp_badges.svg" alt="Diagram of the 3 personas created for Unity.">
             </div>
         </div>
     </div>
@@ -350,8 +350,8 @@
                 </div>      
             </div>
             <div class="row">
-                <a href="assets/specsheet.png" data-lightbox="image-1" data-title="Specsheet">
-                    <img id="businessval-diagram" src="assets/specsheet.png" alt="Spec sheet for the design I proposed across VR, mobile and web">
+                <a href="src/uxresearch/facebook/assets/specsheet.png" data-lightbox="image-1" data-title="Specsheet">
+                    <img id="businessval-diagram" src="src/uxresearch/facebook/assets/specsheet.png" alt="Spec sheet for the design I proposed across VR, mobile and web">
                 </a>
             </div>
     </div>
@@ -375,8 +375,8 @@
         </div>
         <div class="right">
             <div class="row">
-                <a href="assets/whiteboard.png" data-lightbox="image-1" data-title="Brainstorm & ideation">
-                    <img class="standard-right-side-image" src="assets/whiteboard.png" alt="White board where I built out the user study that was conducted.">
+                <a href="src/uxresearch/facebook/assets/whiteboard.png" data-lightbox="image-1" data-title="Brainstorm & ideation">
+                    <img class="standard-right-side-image" src="src/uxresearch/facebook/assets/whiteboard.png" alt="White board where I built out the user study that was conducted.">
                 </a>
             </div>
         </div>
@@ -385,21 +385,21 @@
     <div id="three-goals">
         <div class="goal-detail-text-group">
             <div class="goal-detail-text-heading">Goal #1: Badging placement and iconography usage</div>
-            <a class="center-img-containers" href="assets/uxr_goal1.png" data-lightbox="image-1" data-title="Badging variations">
-            <img class="goal-img" src="assets/uxr_goal1.png" alt="Diagram of the 4 different variations for badges: next to the text or on top of image, then an icon or a text badge.">
+            <a class="center-img-containers" href="src/uxresearch/facebook/assets/uxr_goal1.png" data-lightbox="image-1" data-title="Badging variations">
+            <img class="goal-img" src="src/uxresearch/facebook/assets/uxr_goal1.png" alt="Diagram of the 4 different variations for badges: next to the text or on top of image, then an icon or a text badge.">
             </a>
             
         </div>
         <div class="goal-detail-text-group">
             <div class="goal-detail-text-heading">Goal #2: Modifying the new releases layout</div>
-            <a class="center-img-containers" href="assets/uxr_goal2.png" data-lightbox="image-1" data-title="Layouts for user research">
-            <img class="goal-img" src="assets/uxr_goal2.png" alt="Two different new release layouts that we tested on iPhone screens.">
+            <a class="center-img-containers" href="src/uxresearch/facebook/assets/uxr_goal2.png" data-lightbox="image-1" data-title="Layouts for user research">
+            <img class="goal-img" src="src/uxresearch/facebook/assets/uxr_goal2.png" alt="Two different new release layouts that we tested on iPhone screens.">
                 </a>
         </div>
         <div class="goal-detail-text-group">
             <div class="goal-detail-text-heading">Goal #3: Taxonomy and discoverability of Bundle badge</div>
-            <a class="center-img-containers" href="assets/uxr_goal3.png" data-lightbox="image-1" data-title="Badges in the existing system">
-                <img class="goal-img" src="assets/uxr_goal3.png" alt="Exploring how the new badging system would fit in with the bundle badges.">
+            <a class="center-img-containers" href="src/uxresearch/facebook/assets/uxr_goal3.png" data-lightbox="image-1" data-title="Badges in the existing system">
+                <img class="goal-img" src="src/uxresearch/facebook/assets/uxr_goal3.png" alt="Exploring how the new badging system would fit in with the bundle badges.">
                     </a>
         </div>
         
@@ -437,7 +437,7 @@
         <div class="right">
             <div class="row">
                 <div class="video-container" data-video-id="W2xNPDwRiZg"> 
-                    <img id="thumbnail-badge" src="assets/thumb_larger.png" alt="Video Thumbnail"> 
+                    <img id="thumbnail-badge" src="src/uxresearch/facebook/assets/thumb_larger.png" alt="Video Thumbnail"> 
                     <button class="play-button">Play Video</button> 
                 </div>             
             </div>
@@ -463,7 +463,7 @@
         <div class="right">
             <div class="row">
                 <div class="video-container" data-video-id="_TR-_MJTgbk"> 
-                    <img class="thumbnail" src="assets/thumb_single_highlight.png" alt="Video Thumbnail"> 
+                    <img class="thumbnail" src="src/uxresearch/facebook/assets/thumb_single_highlight.png" alt="Video Thumbnail"> 
                     <button class="play-button">Play Video</button> 
                 </div>             
             </div>
@@ -487,7 +487,7 @@
         <div class="right">
             <div class="row">
                 <div class="video-container" data-video-id="9RoU65sua8Y"> 
-                    <img class="thumbnail" src="assets/thumb_multi_newreleases.png" alt="Video Thumbnail"> 
+                    <img class="thumbnail" src="src/uxresearch/facebook/assets/thumb_multi_newreleases.png" alt="Video Thumbnail"> 
                     <button class="play-button">Play Video</button> 
                 </div>             
             </div>

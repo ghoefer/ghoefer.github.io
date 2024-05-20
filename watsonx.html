@@ -9,7 +9,7 @@
 
     <title>Watsonx Analytics</title>
     <link href="watsonx.css" rel="stylesheet">
-    <link href="../../../styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
     <link href="../project.css" rel="stylesheet">
     <!-- Add icon library -- w3 schools -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -35,7 +35,7 @@
     $(document).ready(function() {
         $.get("components/nav.html", function(data){
             $("#nav-placeholder").append(data);
-            $.getScript("../../../js/nav.js",function(){
+            $.getScript("js/nav.js",function(){
             navfunction();});
             });   
     });
