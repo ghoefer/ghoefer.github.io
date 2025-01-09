@@ -17,6 +17,18 @@ html{
     overflow-x: hidden;
 }
 
+.site-container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.container{
+    min-height: 70vh;
+    height: 70%; 
+    /* width: 100%; */
+    background-color: none;
+}
+
 .home-img{
     /* Photo by <a href="https://unsplash.com/@kirp?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Andrew Kliatskyi</a> on <a href="https://unsplash.com/photos/jpu0gMXT9to?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */
     background-image: url('assets/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg');
@@ -150,7 +162,7 @@ menu a:hover{
 }
 
 .text-side{
-    width: 100%;
+    /* width: 100%; */
 }
 news-container{
     width: 100%;
@@ -246,7 +258,7 @@ news-container{
 top-container{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     overflow: hidden;
     padding-top: 5vh;
     align-items: flex-start;
@@ -676,7 +688,7 @@ project-card-text{
 .container{
     min-height: 70vh;
     height: 70%; 
-    width: 100%;
+    /* width: 100%; */
     background-color: none;
 }
 
@@ -726,6 +738,8 @@ project-card-text{
 
     top-container{
         flex-direction: column;
+        display: flex;
+    justify-content: center;
     }
     .project-cards{
         flex-direction: column;
@@ -808,6 +822,8 @@ project-card-text{
         flex-direction: column;
         padding-left: 10px;
         padding-right: 10px;
+        display: flex;
+        justify-content: center;
     }
     .news-label{
         font-size: 12px;
@@ -905,6 +921,7 @@ project-card-text{
         flex-direction: row;
         padding-left: 10px;
         padding-right: 10px;
+        justify-content: center;
     }
     .project-cards{
         flex-direction: row;
@@ -946,6 +963,7 @@ project-card-text{
         flex-direction: row;
         padding-left: 10px;
         padding-right: 10px;
+        justify-content: center;
     }
     .news-label{
         font-size: 14px;
