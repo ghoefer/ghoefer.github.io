@@ -70,11 +70,12 @@ html{
     background: #2D2F3A;
     width: 100vw;
     max-height: 40px;
+    justify-content: center;
     /* transition: top 0.3s; */
     
 }
 
-.topnav-text-container{
+#topnav-text-container{
     display: flex;
     flex-direction: row;
     padding: 10px;
