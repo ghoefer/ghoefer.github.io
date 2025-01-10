@@ -469,6 +469,9 @@ blue-text{
     display: flex;
     flex-direction: column;
 }
+.left-start{
+    margin-right: 30px;
+}
 
 .right-img{
     width: 100%;
