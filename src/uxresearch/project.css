@@ -471,13 +471,21 @@ card-group{
 }
 
 .bottom-img{
-    width: 100vw;
+    width: 100%;
+    max-width: 1280px;
     height: 80vh;
     object-fit: cover;
 }
 
 
 /* summary section */
+
+#summary-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 .circle {
     border-radius: 50%;
@@ -853,6 +861,7 @@ font-size: 20px;
     #summary-line {
         width: 90%;
     }
+   
     .numbered-summary-item{
         padding: 15px;
         width: 150px;
