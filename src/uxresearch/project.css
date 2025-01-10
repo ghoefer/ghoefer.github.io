@@ -152,6 +152,7 @@ overlay-bg{
     flex-direction: row;
     justify-content: flex-start;
     padding-bottom: 100px;
+    width: 100vw;
 }
 
 .heading-rect{
