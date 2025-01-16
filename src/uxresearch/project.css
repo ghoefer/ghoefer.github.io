@@ -706,6 +706,12 @@ font-size: 20px;
 
     .summary-detail-text-group{
         font-size: 16px;
+        width: 100%;
+    }
+
+    .card-big-text-articles {
+        font-size: 18px;
+        padding: 15px;
     }
 
     .project-section-heading{
@@ -722,8 +728,10 @@ font-size: 20px;
     section{
         padding-bottom: 50px;
     }
-    .top-left{
+    #top-left{
         width: 60%;
+        padding-left: 20px;
+        
     }
 
     #top-right{
@@ -789,6 +797,8 @@ font-size: 20px;
     .LR-text {
         font-size: 14px;
         width: 90%;
+        padding-top: 20px;
+       
     }
     .img-with-label-label{
         font-size: 18px;
@@ -880,9 +890,18 @@ font-size: 20px;
     .card-big-text{
         padding-top: 5px;
     }
-    .top-left{
-        width: 60%;
+  
+
+    .card-big-text-articles{
+        padding-top: 5px;
+        font-size: 18px;
     }
+
+    .large-text-right {
+        font-size: 30px;
+    }
+    .medium-text-right {
+        font-size: 16px;}
 }
 
 /* Medium: tablets */
@@ -890,6 +909,19 @@ font-size: 20px;
     .bigprojectimg{
         height: 40vh;
     }
+
+    .card-big-text-articles{
+        padding-top: 5px;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .large-text-right {
+        font-size: 30px;
+    }
+    .medium-text-right {
+        font-size: 16px;}
+    
     .top-proj-description{
         font-size: 20px; 
         padding-bottom: 8px;
@@ -923,8 +955,9 @@ font-size: 20px;
     section{
         padding-bottom: 50px;
     }
-    .top-left{
+    #top-left{
         width: 60%;
+        padding-left: 20px;
     }
 
     #top-right{
@@ -986,7 +1019,8 @@ font-size: 20px;
         }
         .LR-text {
             font-size: 14px;
-            width: 90%;
+            width: 90%; 
+            padding-top: 20px;
         }
         .img-with-label-label{
             font-size: 18px;
@@ -1046,9 +1080,7 @@ font-size: 20px;
         .card-big-text{
             padding-top: 5px;
         }
-        .top-left{
-            width: 50%;
-        }
+
     }
 
 
@@ -1059,7 +1091,7 @@ font-size: 20px;
         padding-bottom: 8px;
      }
 
-     .top-left{
+     #top-left{
         width: 30%;
     }
 
@@ -1112,7 +1144,7 @@ font-size: 20px;
         padding-bottom: 8px;
      }
 
-     .top-left{
+     #top-left{
         width: 30%;
     }
 }

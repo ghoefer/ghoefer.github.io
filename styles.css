@@ -729,11 +729,13 @@ project-card-text{
 
 /* Small: phones */
 @media only screen and (max-width: 481px) {
-
-    .site-container{
-        margin-left: 20px;
+    .left-start, .right-start {
+            max-width: 100%;
+            margin: 0px;
     }
-
+    .site-container{
+        width: 100%;
+    }
     .footer-content{
         padding-top: 30px;
         padding-bottom: 30px;
@@ -832,8 +834,12 @@ project-card-text{
 
 /* Medium: tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .left-start, .right-start {
+        max-width: 100%;
+        margin: 0px;
+}
     .site-container{
-        margin-left: 20px;
+        width: 100%;
     }
     #bigname,#landing-description-text p, news-container{
         margin-left: 20px;
