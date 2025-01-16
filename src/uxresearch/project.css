@@ -414,6 +414,7 @@ padding-bottom: 50px;
     display: flex;
     align-items: center;
     padding-left: 20px;
+    padding-right: 20px;
 }
 
 .card-big-text{
@@ -424,13 +425,31 @@ padding-bottom: 50px;
     padding-top: 20px;
 }
 
+.card-big-text-articles{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 20px;
+    background-size: cover; /* Optional: Adjusts image scaling */
+    background-position: center; /* Optional: Centers the image */
+    background-repeat: no-repeat; /* Optional: Prevents tiling */
+    height: 100%;
+    width: 100%;
+}
+
+.card-content-articles {
+    padding: 0;
+    height: 80%;
+}
+
 card-group{
     display: flex;
     flex-direction: row;
     width: 100%;
     padding-top:20px;
     justify-content: center;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
 }
