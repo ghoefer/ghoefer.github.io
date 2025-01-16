@@ -51,6 +51,12 @@ padding: 20px;
     justify-content: center;
 }
 
+.bigprojectimg{
+    background-image: url('assets/bg_white.png');
+    background-position: center;
+    background-color: black;
+}
+
 
 
 
