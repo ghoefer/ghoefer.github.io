@@ -730,6 +730,10 @@ project-card-text{
 /* Small: phones */
 @media only screen and (max-width: 481px) {
 
+    .site-container{
+        margin-left: 20px;
+    }
+
     .footer-content{
         padding-top: 30px;
         padding-bottom: 30px;
@@ -828,6 +832,9 @@ project-card-text{
 
 /* Medium: tablets */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
+    .site-container{
+        margin-left: 20px;
+    }
     #bigname,#landing-description-text p, news-container{
         margin-left: 20px;
     }

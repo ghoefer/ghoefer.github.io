@@ -95,5 +95,16 @@ padding: 20px;
     #participant-wheel-text{
         font-size: 12px;
     }
+    #company-title-askibm {
+        font-size: 25px;
+    }
+    #top-details-askibm, #date{
+        font-size: 14px;
+    }
+    .top-section-askibm {
+        padding-left: 30px;
+    }
 
 }
+
+
