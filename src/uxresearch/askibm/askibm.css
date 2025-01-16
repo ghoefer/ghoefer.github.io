@@ -54,10 +54,37 @@ padding: 20px;
 .bigprojectimg{
     background-image: url('assets/bg_white.png');
     background-position: center;
-    background-color: black;
+    background-color: #F4F4F4;
 }
 
+.top-section-askibm{
+    /* padding-left: 30px; */
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color:#F4F4F4;
+    padding-top: 30px;
+    color: black;
+}
 
+#company-title-askibm {
+    color: black;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 8px;
+}
+
+.top-details-askibm {
+    color: black;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom:8px;
+    /* padding-top: 8px; */
+}
 
 
 
