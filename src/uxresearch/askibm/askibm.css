@@ -10,3 +10,31 @@
     background-image: url("assets/wright.png");
 }
 
+
+/* Rectangle 325 */
+.text-container{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    background: #373737;
+    border-radius: 10px;
+    max-width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+.text-with-background{
+font-size: 18px;
+font-weight: 400;
+padding: 20px;
+}
+
+#launch{
+    width: 100%;
+}
+
+.txt-bg-group{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}

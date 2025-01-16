@@ -474,6 +474,34 @@ card-group{
     max-height: 50vh;
 }
 
+.text-with-description-container{
+padding-bottom: 30px;
+display:flex;
+flex: flex-start;
+flex-direction: column;
+align-self: flex-start;
+padding-left: 20px;
+}
+
+.large-text-right{
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-self: flex-start;
+    padding-bottom: 10px;
+    align-self: flex-start;
+    color: #0062FF;
+}
+
+.medium-text-right{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: flex-start;
+}
+
 .quote-wrapper{
     /* display: flex;
     flex-direction: row; */
