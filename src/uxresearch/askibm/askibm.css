@@ -33,8 +33,33 @@ padding: 20px;
     width: 100%;
 }
 
+#quotes{
+    width: 100%;
+    padding-top: 60px;
+}
+#participant-wheel-text{
+    font-size: 18px;
+    align-self: start;
+    width: 80%;
+    padding: 20px;
+    margin-top: 30px;
+    /* background-color:#818181; */
+}
 .txt-bg-group{
     display:flex;
     flex-direction: column;
     justify-content: center;
+}
+
+
+
+
+
+/* Small: phones */
+@media only screen and (max-width: 481px) {
+
+    #participant-wheel-text{
+        font-size: 12px;
+    }
+
 }
