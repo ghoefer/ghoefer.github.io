@@ -21,7 +21,7 @@ all-projects{
 .project-container{
     height: 40vh;
     overflow: hidden;
-    width: 70vw;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     margin: 30px;
