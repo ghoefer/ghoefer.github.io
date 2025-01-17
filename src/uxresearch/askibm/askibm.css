@@ -104,6 +104,9 @@ padding: 20px;
     .top-section-askibm {
         padding-left: 30px;
     }
+    #timeline-diagram{
+        height: 30vh;
+    }
 
 
 }

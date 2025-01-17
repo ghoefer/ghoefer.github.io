@@ -21,7 +21,7 @@ all-projects{
 .project-container{
     height: 40vh;
     overflow: hidden;
-    width: 90vw;
+    width: 70vw;
     display: flex;
     flex-direction: row;
     margin: 30px;
@@ -143,6 +143,7 @@ keyword p, keyword line {
     .project-container {
         flex-direction: column;
         height: 60vh;
+        width: 90vw;
     }
     .project-right{
         padding-left: 20px;
@@ -163,7 +164,9 @@ keyword p, keyword line {
     .project-container {
         flex-direction: row;
         height: 40vh;
+        width: 80vw;
         }
+        
     .container-of-keywords {
         font-size: 12px;
     }

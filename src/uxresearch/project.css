@@ -862,7 +862,7 @@ font-size: 20px;
     /* Small sections/changes */
     .confidentiality-notice {
         font-size: 12px;
-        width: 400px;
+        max-width: 90%;
   }
     .quote-desc{
         font-size: 12px;
