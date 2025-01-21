@@ -463,7 +463,7 @@ blue-text{
 /* CONTAINER FOR TWO COLS LEFT AND RIGHT */
 .container-LR{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     justify-content: center;
     margin: 0px;
     /* padding: 0px; */
