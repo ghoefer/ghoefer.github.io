@@ -30,12 +30,12 @@ photo-collage{
 }
 
 #photo-collage-img{
-    max-width:90vw;
+    max-width:70vw;
 }
 
 .container{
-    min-height: 70vh;
-    height: 70%; 
+    min-height: 40vh;
+    height: 40%; 
     /* width: 100%; */
     background-color: none;
 }
@@ -727,8 +727,8 @@ project-card-text{
 }
 
 .container{
-    min-height: 70vh;
-    height: 70%; 
+    min-height: 40vh;
+    height: 40%; 
     /* width: 100%; */
     background-color: none;
 }
@@ -1009,8 +1009,8 @@ project-card-text{
         padding-bottom: 30px;
     }
     .container{
-        min-height: 70vh;
-        height: 70%; }
+        min-height: 40vh;
+        height: 40%; }
 
     #bigname,#landing-description-text p, news-container{
         margin-left: 20px;
@@ -1150,8 +1150,8 @@ project-card-text{
         height: 30vh;
     }
     .container{
-        min-height: 70vh;
-        height: 70%; }
+        min-height: 40vh;
+        height: 40%; }
 
     
     /* FOOTER */
@@ -1376,8 +1376,8 @@ project-card-text{
 /* Large: laptops */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     .container{
-        min-height: 70vh;
-        height: 70%; }
+        min-height: 40vh;
+        height: 40%; }
     
     #bigname,#landing-description-text p, news-container{
         margin-left: 20px;
@@ -1478,8 +1478,8 @@ project-card-text{
 @media only screen and (min-width: 1025px) {
 
     .container{
-        min-height: 70vh;
-        height: 70%; }
+        min-height: 40vh;
+        height: 40%; }
 
     #bigname,#landing-description-text p, news-container{
         margin-left: 20px;
