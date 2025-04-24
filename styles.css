@@ -4,6 +4,8 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap'); */
 
+
+
 body{
     font-family: 'Roboto', sans-serif;
     padding: 0px;
@@ -20,6 +22,10 @@ html{
 .site-container{
     max-width: 1280px;
     margin: 0 auto;
+}
+
+#photo-collage-img{
+    max-width:90vw;
 }
 
 .container{
